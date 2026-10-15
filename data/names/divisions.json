@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "project": "BD-Map",
+    "author": "Tashrif Alam",
+    "copyright": "© 2026 Tashrif Alam",
+    "license": "CC BY-NC-SA 4.0",
+    "description": "Official English and Bangla names of the 8 divisions, mapped from geoBoundaries shapeName.",
+    "last_verified": "2026-10-15"
+  },
+  "data": [
+    { "source_name": "Barisal", "id": "barishal", "name_en": "Barishal", "name_bn": "বরিশাল" },
+    { "source_name": "Chittagong", "id": "chattogram", "name_en": "Chattogram", "name_bn": "চট্টগ্রাম" },
+    { "source_name": "Dhaka", "id": "dhaka", "name_en": "Dhaka", "name_bn": "ঢাকা" },
+    { "source_name": "Khulna", "id": "khulna", "name_en": "Khulna", "name_bn": "খুলনা" },
+    { "source_name": "Mymensingh", "id": "mymensingh", "name_en": "Mymensingh", "name_bn": "ময়মনসিংহ" },
+    { "source_name": "Rajshani", "id": "rajshahi", "name_en": "Rajshahi", "name_bn": "রাজশাহী" },
+    { "source_name": "Rangpur", "id": "rangpur", "name_en": "Rangpur", "name_bn": "রংপুর" },
+    { "source_name": "Sylhet", "id": "sylhet", "name_en": "Sylhet", "name_bn": "সিলেট" }
+  ]
+}

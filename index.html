@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+  BD-Map — Bangladesh Interactive Map
+  © 2026 Tashrif Alam. Licensed under CC BY-NC-SA 4.0 (non-commercial). Keep this notice.
+-->
+<html lang="bn" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>BD-Map — বাংলাদেশের ইন্টারেক্টিভ মানচিত্র</title>
+    <meta name="author" content="Tashrif Alam" />
+    <meta name="copyright" content="© 2026 Tashrif Alam" />
+    <meta name="description" content="BD-Map by Tashrif Alam — an interactive, bilingual (Bangla / English) map of Bangladesh's divisions, districts, upazilas and parliamentary constituencies." />
+    <meta name="theme-color" content="#006a4e" />
+    <meta property="og:title" content="BD-Map — Bangladesh Interactive Map" />
+    <meta property="og:description" content="Interactive, bilingual map of Bangladesh by Tashrif Alam." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BD-Map by Tashrif Alam" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // Apply the saved (or system) theme and language before React renders — avoids a flash.
+      (function () {
+        var t = null, l = null;
+        try { t = localStorage.getItem('bdmap-theme'); l = localStorage.getItem('bdmap-lang'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (l !== 'bn' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('en') === 0 ? 'en' : 'bn';
+        document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.setAttribute('lang', l);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>BD-Map needs JavaScript. © 2026 Tashrif Alam</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
