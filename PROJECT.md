@@ -363,6 +363,10 @@ These examples are illustrative templates, not actual official records.
 - **Phase 6:** Add search, filters, map layers, and detail panels.
 - **Phase 7:** Validate geographical accuracy, finalize source documentation, About page, and production deploy.
 
+### Status (2026-10-15)
+
+Phases 1–6 are implemented and Phase 7 is complete except the first deploy, which needs the owner's Cloudflare account. Open data gaps (city-corporation ward boundaries, newer unions/thanas, some Bangla names) are tracked in [TODO.md](TODO.md).
+
 ## 11. Final Vision
 
 BD-Map will be an open, bilingual, interactive geographical resource for Bangladesh, created and maintained by **Tashrif Alam**. It will combine administrative information and parliamentary constituency boundaries in one place, allowing users to explore the country from the division level down to smaller administrative areas and electoral constituencies.

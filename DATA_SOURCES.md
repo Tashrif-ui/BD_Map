@@ -61,6 +61,16 @@ geoBoundaries asks users to cite: Runfola, D. et al. (2020) *geoBoundaries: A gl
 - Thanas and unions are assigned to the upazila (2023) that contains them.
 - Geometry simplified with mapshaper (shared borders kept topologically consistent); coordinates rounded to 4 decimals (~11 m).
 
+## Accuracy check (2026-10-15)
+
+Areas of the simplified boundaries compared with the official `area_sqkm` of OCHA COD-AB v03:
+
+| Check | Result |
+|---|---|
+| Whole country | 146,604 km² vs 145,962 km² official — **+0.44 %** |
+| Largest district difference | Lalmonirhat +0.69 %, Narail +0.68 %, Nilphamari +0.62 % (all 64 within 0.7 %) |
+| Constituency coverage | the 285 drawn seats cover 99.7 % of the country |
+
 ## Known limitations
 
 - Upazila boundaries reflect BBS data valid on 2023-05-21. Thana and union boundaries are from 2015; units created later (new thanas, unions, wards) are missing, and their edges may differ slightly from the 2023 upazila edges.

@@ -62,6 +62,8 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress / partial
 - [x] About dialog (author, how to credit, license, sources) from the footer
 
 ## Phase 7 — Validation, docs, launch
-- [ ] Full geographic accuracy check
-- [ ] Final source documentation
-- [ ] Production deploy to Cloudflare Pages
+- [x] `npm run validate` checks every dataset before each build (counts, parent links, owner credit, file size, geometry, constituency coverage)
+- [x] Geographic accuracy check against official areas (country +0.44 %, every district within 0.7 %) — see DATA_SOURCES.md
+- [x] Browser tests of desktop, mobile and landscape (55 checks) — all passing
+- [x] README, DATA_SOURCES, PROJECT and TODO updated
+- [ ] Push to GitHub and connect Cloudflare Pages (owner's accounts) — settings in README

@@ -6,17 +6,20 @@
 
 BD-Map lets you explore Bangladesh from its 8 divisions and 64 districts down to upazilas, thanas, unions and the 300 parliamentary constituencies. It is built for learning and knowledge: for students, researchers, journalists and anyone curious about the country.
 
-## Features (current)
+## Features
 
-- All 8 divisions and 64 districts with real boundaries
-- Bangla and English names, Bangla digits, language switcher with flags
-- Light and dark mode (follows your system on first visit)
-- Search in Bangla or English
-- Click any division or district for details; breadcrumb navigation
-- Layer panel, mobile-friendly drawer and bottom sheet
+- **8 divisions, 64 districts, 495 upazilas + 12 city corporations** (OCHA COD-AB v03, BBS 2023)
+- **544 thanas and 5,160 unions / paurashavas / wards** (BBS 2015), unions loaded per district as you zoom in
+- **All 300 parliamentary constituencies** from the Election Commission gazette of 11 Dec 2025 (with later amendments): seat numbers, names, verbatim gazette text and boundaries (267 complete, 18 partial, 15 not drawable — every gap is listed, nothing is guessed)
+- Bangla and English everywhere (Bangla digits too), language switcher with flags
+- Light and dark mode, following the system on first visit
+- Search any place or seat in Bangla or English, or by seat number
+- Layer panel, details panel with breadcrumbs, shareable links (`#seat/seat-186`)
+- Save the map as an image with a `BD-Map · © Tashrif Alam` watermark
+- Works on phones (drawer, bottom sheet, landscape layout)
 - 100% static, hosted free on Cloudflare Pages
 
-Coming next: upazilas, thanas, unions (Phase 4) and parliamentary constituencies (Phase 5). See [TODO.md](TODO.md).
+See [TODO.md](TODO.md) for what is still open.
 
 ## Run locally
 
@@ -35,7 +38,7 @@ Other scripts:
 | `npm run preview` | Serves the production build locally |
 | `npm run validate` | Checks counts, parent links, owner credit and file sizes in `public/data/` |
 | `npm run data:fetch` | Downloads raw boundary files into `data/raw/` |
-| `npm run data:build` | Rebuilds `public/data/` from `data/raw/` and `data/names/` |
+| `npm run data:build` | Rebuilds `public/data/` from `data/raw/`, `data/names/` and `data/constituencies/` |
 
 ## Deploy (Cloudflare Pages, free)
 
@@ -50,6 +53,7 @@ Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **
 
 ```
 data/names/        curated official English + Bangla names (project content)
+data/constituencies/ Election Commission gazette transcription + spelling aliases
 data/raw/          downloaded third-party boundaries (git-ignored)
 public/data/       published data used by the site (+ boundaries/)
 scripts/           fetch, build and validate the data
