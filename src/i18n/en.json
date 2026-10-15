@@ -1,7 +1,7 @@
 {
   "tagline": "Interactive map of Bangladesh",
   "beta": "Beta",
-  "searchPh": "Search district, upazila or union…",
+  "searchPh": "Search district, upazila, union or seat…",
   "search": "Search",
   "noResults": "No results found",
   "layers": "Layers",
@@ -32,7 +32,7 @@
   "verified": "Last verified",
   "welcomeTitle": "Bangladesh",
   "welcomeText": "Click any area on the map, or search for a division, district, upazila or union above.",
-  "hint": "Turn on upazila, thana and union layers from the left panel. Zoom in to see more names.",
+  "hint": "Turn on upazila, thana, union and constituency layers from the left panel. Zoom in to see more names.",
   "chipIdle": "Click an area on the map",
   "license": "CC BY-NC-SA 4.0 · Non-commercial",
   "footerRight": "Built for learning and knowledge",
@@ -64,5 +64,18 @@
   "type": "Type",
   "s_upz2": "Upazilas",
   "s_city": "City corporations",
-  "s_union": "Unions"
+  "s_union": "Unions",
+  "constituency": "Constituency",
+  "seatNo": "Seat No. {n}",
+  "gazetteText": "Area as described in the gazette (Bangla)",
+  "seatsIn": "Constituencies in this district",
+  "seatsOf": "Constituencies",
+  "boundary": "Boundary",
+  "q_complete": "Complete",
+  "q_partial": "Partial",
+  "q_none": "Not on the map",
+  "qNote_partial": "Boundary data is missing for some areas, so the map outline is partial (dashed):",
+  "qNote_none": "Boundary data for these areas (e.g. current city corporation wards) is not available, so the seat is not drawn:",
+  "sourceSeat": "Constituencies: Bangladesh Election Commission gazette No. 875 (11 Dec 2025), with amendments No. 921 and No. 66",
+  "seatSplitNote": "An upazila can be split between several constituencies."
 }

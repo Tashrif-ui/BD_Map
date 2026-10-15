@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "project": "BD-Map",
+    "author": "Tashrif Alam",
+    "copyright": "© 2026 Tashrif Alam",
+    "license": "CC BY-NC-SA 4.0",
+    "description": "Gazette spellings that differ from the boundary datasets. Only unambiguous matches are listed; uncertain ones (e.g. বনগাঁও, উত্তর তারাবুনিয়া, ইছাপুরা) and unions created after 2015 are deliberately left unmatched.",
+    "last_verified": "2026-10-15"
+  },
+  "upazilas": [
+    { "district": "gaibandha", "bn": "সাদুল্যাপুর", "upazila": "gaibandha-sadullapur" },
+    { "district": "pabna", "bn": "ভাঙ্গুরা", "upazila": "pabna-bhangura" },
+    { "district": "tangail", "bn": "ভূঞাপুর", "upazila": "tangail-bhuanpur" },
+    { "district": "chattogram", "bn": "মীরশ্বরাই", "upazila": "chattogram-mirsarai" },
+    { "district": "narayanganj", "bn": "সোনারগাঁও", "upazila": "narayanganj-sonargaon" }
+  ],
+  "unions": [
+    { "upazila": "sirajganj-sirajganj-sadar", "bn": "মেছড়া", "en": "Mechhra" },
+    { "upazila": "sirajganj-sirajganj-sadar", "bn": "ছোনগাছা", "en": "Chhangachha" },
+    { "upazila": "sirajganj-sirajganj-sadar", "bn": "কাওয়াকোলা", "en": "Kaoakola" },
+    { "upazila": "chuadanga-chuadanga-sadar", "bn": "তিতুদহ", "en": "Titudaha" },
+    { "upazila": "magura-magura-sadar", "bn": "কুচিয়ামোড়া", "en": "Kuchiamora" },
+    { "upazila": "narail-narail-sadar", "bn": "বিছালি", "en": "Bichhali" },
+    { "upazila": "narail-narail-sadar", "bn": "বিছালী", "en": "Bichhali" },
+    { "upazila": "dhaka-keraniganj", "bn": "শুভাড্যা", "en": "Subhadya (Part)" },
+    { "upazila": "narsingdi-narsingdi-sadar", "bn": "আমদিয়া", "en": "Amdia" },
+    { "upazila": "narsingdi-narsingdi-sadar", "bn": "মেহের পাড়া", "en": "Meher Para" },
+    { "upazila": "narayanganj-narayanganj-sadar", "bn": "ফতুল্লা", "en": "Fatullah (part)" },
+    { "upazila": "gopalganj-kashiani", "bn": "হাতাইরা", "en": "Hatiara" },
+    { "upazila": "gopalganj-kashiani", "bn": "পুকরা", "en": "Fukura" },
+    { "upazila": "madaripur-madaripur-sadar", "bn": "মোস্তফাপুর", "en": "Mustafapur" },
+    { "upazila": "shariatpur-bhedarganj", "bn": "চরসেনছাস", "en": "Char Census" },
+    { "upazila": "shariatpur-bhedarganj", "bn": "দক্ষিণ তারাবুনিয়া", "en": "Dhakhin Tarabunia" },
+    { "upazila": "shariatpur-bhedarganj", "bn": "ডি এম খালি", "en": "Digar Mahishkhali" },
+    { "upazila": "shariatpur-bhedarganj", "bn": "ছয়গাঁও", "en": "Chhaygaon" },
+    { "upazila": "brahmanbaria-bijoynagar", "bn": "দক্ষিণ সিংগারবিল", "en": "Dakshin Singerbil" },
+    { "upazila": "brahmanbaria-bijoynagar", "bn": "বিষ্ণুপুর", "en": "Bishnupur" },
+    { "upazila": "noakhali-noakhali-sadar", "bn": "এওজবালিয়া", "en": "Ewazbalia" },
+    { "upazila": "noakhali-noakhali-sadar", "bn": "কালাদরাপ", "en": "Kaladaraf" },
+    { "upazila": "noakhali-noakhali-sadar", "bn": "পূর্ব চরমটুয়া", "en": "Purba Char Matua" },
+    { "upazila": "noakhali-noakhali-sadar", "bn": "নেয়াজপুর", "en": "Niazpur" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "উত্তর হামছাদী", "en": "Uttar Hamchadi" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "দক্ষিণ হামছাদী", "en": "Dakshin Hamchadi" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "ভাঙ্গা খাঁ", "en": "Bangakha" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "উত্তর জয়পুর", "en": "Uttar Joypur" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "মান্দারী", "en": "Mandari" },
+    { "upazila": "lakshmipur-lakshmipur-sadar", "bn": "তেওয়ারীগঞ্জ", "en": "Tiariganj" },
+    { "upazila": "chattogram-satkania", "bn": "ধর্মপুর", "en": "Dharmapur" }
+  ]
+}

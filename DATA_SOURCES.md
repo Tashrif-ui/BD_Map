@@ -74,4 +74,6 @@ geoBoundaries asks users to cite: Runfola, D. et al. (2020) *geoBoundaries: A gl
 | Main gazette | No. 875, *জাতীয় সংসদের ৩০০ আসনের পুনঃনির্ধারিত সীমানার গেজেট*, 11 December 2025 |
 | Amendments | No. 921 (24 December 2025: Pabna-1, Pabna-2, Faridpur-2, Faridpur-4); No. 66 (15 January 2026: Pabna-1, Pabna-2) |
 | License | Government gazette (public record) |
-| Status | see `constituencies.json` meta and TODO.md |
+| Transcription | `data/constituencies/gazette.json` — every seat transcribed from the gazette page images (the PDF text layer uses a legacy font and cannot be extracted); `text_bn` is verbatim |
+| Spelling aliases | `data/constituencies/aliases.json` — only unambiguous matches |
+| Boundaries | built by `scripts/build-constituencies.mjs` from the upazila (2023) and union/ward (2015) boundaries above: **267 complete, 18 partial, 15 not drawable**. Missing parts (current city-corporation wards of Dhaka North/South, Gazipur, Narayanganj and Rangpur; Sylhet wards 28–42; cantonments; airport; unions created after 2015) are listed per seat in `unmatched` |

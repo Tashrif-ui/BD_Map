@@ -101,6 +101,26 @@ checkChildren("union", unions);
 if (thanas.length < 500) fail(`only ${thanas.length} thanas`);
 if (unions.length < 4500) fail(`only ${unions.length} unions`);
 
+// Parliamentary constituencies
+const seats = parsed["constituencies.json"]?.data ?? [];
+if (seats.length !== 300) fail(`expected 300 constituencies, found ${seats.length}`);
+seats.forEach((s, i) => {
+  if (s.seat !== i + 1) fail(`constituency order broken at ${s.seat}`);
+  if (!s.name_bn || !s.name_en || !s.text_bn) fail(`seat ${s.seat}: missing name or gazette text`);
+  if (!distIds.has(s.district_id)) fail(`seat ${s.seat}: unknown district ${s.district_id}`);
+  for (const u of s.upazila_ids) if (!upzIds.has(u)) fail(`seat ${s.seat}: unknown upazila ${u}`);
+  if (!["complete", "partial", "none"].includes(s.boundary_quality)) fail(`seat ${s.seat}: bad boundary_quality`);
+  if (s.boundary_quality !== "complete" && !s.unmatched.length) fail(`seat ${s.seat}: partial without unmatched parts`);
+});
+for (const u of upazilas) if (!seats.some((s) => s.upazila_ids.includes(u.id))) fail(`upazila ${u.id} is in no constituency`);
+{
+  const fc = parsed["boundaries/constituencies.geojson"];
+  const withShape = seats.filter((s) => s.boundary_quality !== "none").map((s) => s.id).sort();
+  if (!fc) fail("boundaries/constituencies.geojson: missing");
+  else if (JSON.stringify(fc.features.map((f) => f.properties.id).sort()) !== JSON.stringify(withShape))
+    fail("constituency shapes do not match the seats that have a boundary");
+}
+
 // 3. Boundaries: one feature per record, closed rings, coordinates inside Bangladesh
 function checkBoundaries(path, records) {
   const fc = parsed[path];
@@ -126,6 +146,7 @@ checkBoundaries('boundaries/divisions.geojson', divisions);
 checkBoundaries('boundaries/districts.geojson', districts);
 checkBoundaries("boundaries/upazilas.geojson", upazilas);
 checkBoundaries("boundaries/thanas.geojson", thanas);
+checkBoundaries("boundaries/constituencies.geojson", seats.filter((x) => x.boundary_quality !== "none"));
 // Unions are split per district; together they must cover every union exactly once.
 {
   const all = [];
@@ -146,4 +167,4 @@ if (errors.length) {
   console.error(`✗ data validation failed (${errors.length}):\n  - ${errors.join('\n  - ')}`);
   process.exit(1);
 }
-console.log(`✓ data valid: ${divisions.length} divisions, ${districts.length} districts, ${upazilas.length} upazilas (${cities} city corporations), ${thanas.length} thanas, ${unions.length} unions, ${Object.keys(parsed).length - 1} files`);
+console.log(`✓ data valid: ${divisions.length} divisions, ${districts.length} districts, ${upazilas.length} upazilas (${cities} city corporations), ${thanas.length} thanas, ${unions.length} unions, ${seats.length} constituencies, ${Object.keys(parsed).length - 1} files`);

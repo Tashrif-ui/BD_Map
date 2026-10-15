@@ -24,10 +24,11 @@ const byId = (list) => Object.fromEntries(list.map((x) => [x.id, x]));
 
 // Loaded at start: small files needed for the first screen.
 export async function loadData() {
-  const [divisions, districts, upazilas, divisionShapes, districtShapes] = await Promise.all([
+  const [divisions, districts, upazilas, seats, divisionShapes, districtShapes] = await Promise.all([
     getJson('divisions.json'),
     getJson('districts.json'),
     getJson('upazilas.json'),
+    getJson('constituencies.json'),
     getJson('boundaries/divisions.geojson'),
     getJson('boundaries/districts.geojson'),
   ]);
@@ -40,7 +41,19 @@ export async function loadData() {
     f.properties.fill = districtShade(d, seen[d]);
   }
 
+  // Seats per district and per upazila (a split upazila belongs to several seats).
+  const seatsByDistrict = {};
+  const seatsByUpazila = {};
+  for (const s of seats.data) {
+    (seatsByDistrict[s.district_id] ||= []).push(s);
+    for (const u of s.upazila_ids) (seatsByUpazila[u] ||= []).push(s);
+  }
+
   return {
+    seats: seats.data,
+    seatById: byId(seats.data),
+    seatsByDistrict,
+    seatsByUpazila,
     divisions: divisions.data,
     districts: districts.data,
     upazilas: upazilas.data,
@@ -67,5 +80,7 @@ export async function loadUnions() {
   for (const u of records.data) (byUpazila[u.upazila_id] ||= []).push(u);
   return { unions: records.data, unionById: byId(records.data), unionsByUpazila: byUpazila };
 }
+
+export const loadSeatShapes = () => getJson('boundaries/constituencies.geojson');
 
 export const loadUnionShapes = (districtId) => getJson(`boundaries/unions/${districtId}.geojson`);

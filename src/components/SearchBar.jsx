@@ -8,12 +8,15 @@ import { DIVISION_ORDER } from '../lib/colors.js';
 import { kindKey } from '../lib/places.js';
 
 const MAX_RESULTS = 10;
-const TYPE_RANK = { division: 0, district: 1, upazila: 2, thana: 3, union: 4 };
+const TYPE_RANK = { division: 0, district: 1, upazila: 2, seat: 3, thana: 4, union: 5 };
+// Bangla letters like ড় / য় can be typed precomposed or as letter + nukta; compare in one form.
+const fold = (s) => s.normalize('NFD').toLowerCase();
+const toLatinDigits = (s) => s.replace(/[০-৯]/g, (d) => '০১২৩৪৫৬৭৮৯'.indexOf(d));
 
 // Searches Bangla and English names at the same time, whatever the active language.
 // Thanas and unions join the index once their records are loaded (on first focus).
 export default function SearchBar({ data, extra, onPick, onNeedData }) {
-  const { t, name } = useLanguage();
+  const { t, name, num } = useLanguage();
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -23,19 +26,23 @@ export default function SearchBar({ data, extra, onPick, onNeedData }) {
       ...DIVISION_ORDER.map((id) => ({ type: 'division', item: data.divisionById[id] })),
       ...data.districts.map((d) => ({ type: 'district', item: d })),
       ...data.upazilas.map((u) => ({ type: 'upazila', item: u })),
+      ...data.seats.map((s) => ({ type: 'seat', item: s })),
       ...(extra.thanas ?? []).map((x) => ({ type: 'thana', item: x })),
       ...(extra.unions ?? []).map((x) => ({ type: 'union', item: x })),
     ];
     for (const it of list) {
-      it.en = it.item.name_en.toLowerCase();
-      it.bn = it.item.name_bn ?? '';
+      it.en = fold(it.item.name_en);
+      it.bn = fold(it.item.name_bn ?? '');
     }
     return list;
   }, [data, extra.thanas, extra.unions]);
 
   const hits = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = fold(query.trim());
     if (!q) return [];
+    // A plain number (in Bangla or Latin digits) finds the seat with that number.
+    const asNumber = /^[0-9০-৯]{1,3}$/.test(q) ? Number(toLatinDigits(q)) : null;
+    if (asNumber) return index.filter((it) => it.type === 'seat' && it.item.seat === asNumber);
     const starts = (it) => (it.en.startsWith(q) || it.bn.startsWith(q) ? 0 : 1);
     return index
       .filter((it) => it.en.includes(q) || it.bn.includes(q))
@@ -47,6 +54,7 @@ export default function SearchBar({ data, extra, onPick, onNeedData }) {
   const parentOf = (hit) => {
     const it = hit.item;
     if (hit.type === 'division') return '';
+    if (hit.type === 'seat') return `#${num(it.seat)}`;
     if (hit.type === 'district') return name(data.divisionById[it.division_id]);
     if (hit.type === 'upazila') return name(data.districtById[it.district_id]);
     const upz = data.upazilaById[it.upazila_id];

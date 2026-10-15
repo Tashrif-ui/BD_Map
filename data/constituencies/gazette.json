@@ -1,0 +1,6115 @@
+{
+ "meta": {
+  "project": "BD-Map",
+  "author": "Tashrif Alam",
+  "copyright": "© 2026 Tashrif Alam",
+  "license": "CC BY-NC-SA 4.0 (transcription and structure); the gazette itself is a public record",
+  "description": "Transcription of the Bangladesh Election Commission gazette defining the 300 parliamentary constituencies (13th Jatiya Sangsad), with later amendments applied. text_bn is verbatim; parts is the structured reading of it.",
+  "sources": [
+   {
+    "name": "Bangladesh Election Commission — gazette No. 875 (17.00.0000.025.22.090.24-875), 11 December 2025",
+    "url": "https://ecs.gov.bd/page/gazette-related-to-electoral-areas"
+   },
+   {
+    "name": "Amendment No. 921, 24 December 2025 (Faridpur-2, Faridpur-4; Pabna changes later cancelled)",
+    "url": "https://ecs.gov.bd/page/gazette-related-to-electoral-areas"
+   },
+   {
+    "name": "Amendment No. 66, 15 January 2026 (Pabna-1, Pabna-2 restored)",
+    "url": "https://ecs.gov.bd/page/gazette-related-to-electoral-areas"
+   }
+  ],
+  "amendments": {
+   "66": "সুপ্রীম কোর্টের আপীল বিভাগ কর্তৃক Civil Petition for Leave to Appeal No. 190/2026 এ ১৫ জানুয়ারি ২০২৬ তারিখে প্রদত্ত আদেশ অনুযায়ী ২৪ ডিসেম্বর ২০২৫ তারিখের ১৭.০০.০০০০.০২৫.২২.০৯০.২৪-৯২১ নম্বর স্মারকমূলে প্রকাশিত (সংশোধিত) গেজেটের ৬৮ পাবনা-১ ও ৬৯ পাবনা-২ আসনের সীমানার সংশ্লিষ্ট অংশটুকু বাতিল করা হয় এবং ৪ সেপ্টেম্বর ২০২৫ তারিখের ১৭.০০.০০০০.০২৫.২২.০৯০.২৪-৬৫৪ নম্বর স্মারকমূলে প্রকাশিত গেজেটের ৮৮৪০ নম্বর পৃষ্ঠায় বর্ণিত পাবনা-১ (সাঁথিয়া উপজেলা) ও পাবনা-২ (সুজানগর উপজেলা ও বেড়া উপজেলা) আসনের সীমানা পুনর্বহাল করা হয়।",
+   "921": "সুপ্রীম কোর্টের হাইকোর্ট বিভাগে দায়েরকৃত রিট পিটিশন নম্বর-১৫৭৯২/২০২৫ ও ১৫৪১০/২০২৫ এবং ১৫৬১৪/২০২৫ এর Lawyer's Certificate অনুযায়ী ১১ ডিসেম্বর ২০২৫ তারিখে জারীকৃত ১৭.০০.০০০০.০২৫.২২.০৯০.২৪-৮৭৫ নম্বর স্মারকমূলে প্রকাশিত বিজ্ঞপ্তিতে সংশোধনী আনয়ন: ৬৮ পাবনা-১ আসনে 'সাঁথিয়া উপজেলা' এর পরিবর্তে সাঁথিয়া উপজেলা এবং বেড়া উপজেলার বেড়া পৌরসভা, হাটুরিয়া নাকালিয়া, নতুন ভারেঙ্গা, চাকলা ও কৈটোলা ইউনিয়ন; ৬৯ পাবনা-২ আসনে সুজানগর উপজেলা এবং উক্ত এলাকাসমূহ ব্যতীত বেড়া উপজেলা; ২১২ ফরিদপুর-২ আসন হতে ভাঙ্গা উপজেলার আলগী ও হামিরদী ইউনিয়ন বাদ দিয়ে কেবল নগরকান্দা ও সালথা উপজেলা; ২১৪ ফরিদপুর-৪ আসনে সম্পূর্ণ ভাঙ্গা উপজেলা, চরভদ্রাসন উপজেলা এবং সদরপুর উপজেলা প্রতিস্থাপিত হইবে।"
+  },
+  "last_verified": "2026-10-15"
+ },
+ "seats": [
+  {
+   "seat": 1,
+   "name_bn": "পঞ্চগড়-১",
+   "district_bn": "পঞ্চগড়",
+   "text_bn": "(ক) পঞ্চগড় সদর উপজেলা, (খ) তেতুলিয়া উপজেলা এবং (গ) আটোয়ারী উপজেলা [বোদা পৌরসভার অংশ বাদে]",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পঞ্চগড় সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তেতুলিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আটোয়ারী",
+     "mode": "whole_except",
+     "except_text_bn": "বোদা পৌরসভার অংশ বাদে"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 2,
+   "name_bn": "পঞ্চগড়-২",
+   "district_bn": "পঞ্চগড়",
+   "text_bn": "(ক) বোদা উপজেলার ইউনিয়নসমূহ (খ) বোদা পৌরসভা এবং (গ) দেবীগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "বোদা",
+     "mode": "all_unions"
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "বোদা"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দেবীগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 3,
+   "name_bn": "ঠাকুরগাঁও-১",
+   "district_bn": "ঠাকুরগাঁও",
+   "text_bn": "ঠাকুরগাঁও সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঠাকুরগাঁও সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 4,
+   "name_bn": "ঠাকুরগাঁও-২",
+   "district_bn": "ঠাকুরগাঁও",
+   "text_bn": "(ক) বালিয়াডাংগী উপজেলা, (খ) হরিপুর উপজেলা এবং (গ) রাণীশংকৈল উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) ধর্মগড় ও (২) কাশিপুর",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বালিয়াডাংগী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হরিপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "রাণীশংকৈল",
+     "mode": "listed",
+     "unions_bn": [
+      "ধর্মগড়",
+      "কাশিপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 5,
+   "name_bn": "ঠাকুরগাঁও-৩",
+   "district_bn": "ঠাকুরগাঁও",
+   "text_bn": "(ক) পীরগঞ্জ উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত রাণীশংকৈল উপজেলা :- (১) ধর্মগড় ও (২) কাশিপুর",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পীরগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "রাণীশংকৈল",
+     "mode": "except",
+     "unions_bn": [
+      "ধর্মগড়",
+      "কাশিপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 6,
+   "name_bn": "দিনাজপুর-১",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "(ক) বীরগঞ্জ উপজেলা এবং (খ) কাহারোল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বীরগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাহারোল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 7,
+   "name_bn": "দিনাজপুর-২",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "(ক) বোচাগঞ্জ উপজেলা এবং (খ) বিরল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বোচাগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বিরল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 8,
+   "name_bn": "দিনাজপুর-৩",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "দিনাজপুর সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দিনাজপুর সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 9,
+   "name_bn": "দিনাজপুর-৪",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "(ক) খানসামা উপজেলা এবং (খ) চিরিরবন্দর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "খানসামা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চিরিরবন্দর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 10,
+   "name_bn": "দিনাজপুর-৫",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "(ক) পার্বতীপুর উপজেলা এবং (খ) ফুলবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পার্বতীপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 11,
+   "name_bn": "দিনাজপুর-৬",
+   "district_bn": "দিনাজপুর",
+   "text_bn": "(ক) নবাবগঞ্জ উপজেলা (খ) বিরামপুর উপজেলা (গ) হাকিমপুর উপজেলা এবং (ঘ) ঘোড়াঘাট উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নবাবগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বিরামপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাকিমপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঘোড়াঘাট",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 12,
+   "name_bn": "নীলফামারী-১",
+   "district_bn": "নীলফামারী",
+   "text_bn": "(ক) ডোমার উপজেলা এবং (খ) ডিমলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ডোমার",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ডিমলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 13,
+   "name_bn": "নীলফামারী-২",
+   "district_bn": "নীলফামারী",
+   "text_bn": "নীলফামারী সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নীলফামারী সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 14,
+   "name_bn": "নীলফামারী-৩",
+   "district_bn": "নীলফামারী",
+   "text_bn": "জলঢাকা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "জলঢাকা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 15,
+   "name_bn": "নীলফামারী-৪",
+   "district_bn": "নীলফামারী",
+   "text_bn": "(ক) সৈয়দপুর উপজেলা এবং (খ) কিশোরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সৈয়দপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কিশোরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 16,
+   "name_bn": "লালমনিরহাট-১",
+   "district_bn": "লালমনিরহাট",
+   "text_bn": "(ক) পাটগ্রাম উপজেলা এবং (খ) হাতীবান্ধা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাটগ্রাম",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাতীবান্ধা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 17,
+   "name_bn": "লালমনিরহাট-২",
+   "district_bn": "লালমনিরহাট",
+   "text_bn": "(ক) কালীগঞ্জ উপজেলা এবং (খ) আদিতমারী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আদিতমারী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 18,
+   "name_bn": "লালমনিরহাট-৩",
+   "district_bn": "লালমনিরহাট",
+   "text_bn": "লালমনিরহাট সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "লালমনিরহাট সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 19,
+   "name_bn": "রংপুর-১",
+   "district_bn": "রংপুর",
+   "text_bn": "(ক) গংগাচড়া উপজেলা এবং (খ) রংপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১, ২, ৩, ৪, ৫, ৬, ৭, ৮ ও ৯",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গংগাচড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "রংপুর",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 20,
+   "name_bn": "রংপুর-২",
+   "district_bn": "রংপুর",
+   "text_bn": "(ক) তারাগঞ্জ উপজেলা এবং (খ) বদরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "তারাগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বদরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 21,
+   "name_bn": "রংপুর-৩",
+   "district_bn": "রংপুর",
+   "text_bn": "(ক) রংপুর সদর উপজেলা, (খ) রংপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১, ২, ৩, ৪, ৫, ৬, ৭, ৮ ও ৯ ব্যতীত রংপুর সিটি কর্পোরেশন এবং (গ) রংপুর সেনানিবাস এলাকা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রংপুর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "other",
+     "text_bn": "রংপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১, ২, ৩, ৪, ৫, ৬, ৭, ৮ ও ৯ ব্যতীত রংপুর সিটি কর্পোরেশন",
+     "city_bn": "রংপুর",
+     "except_wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "kind": "other",
+     "text_bn": "রংপুর সেনানিবাস এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 22,
+   "name_bn": "রংপুর-৪",
+   "district_bn": "রংপুর",
+   "text_bn": "(ক) পীরগাছা উপজেলা এবং (খ) কাউনিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পীরগাছা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাউনিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 23,
+   "name_bn": "রংপুর-৫",
+   "district_bn": "রংপুর",
+   "text_bn": "মিঠাপুকুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মিঠাপুকুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 24,
+   "name_bn": "রংপুর-৬",
+   "district_bn": "রংপুর",
+   "text_bn": "পীরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পীরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 25,
+   "name_bn": "কুড়িগ্রাম-১",
+   "district_bn": "কুড়িগ্রাম",
+   "text_bn": "(ক) ভুরুঙ্গামারী উপজেলা এবং (খ) নাগেশ্বরী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভুরুঙ্গামারী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাগেশ্বরী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 26,
+   "name_bn": "কুড়িগ্রাম-২",
+   "district_bn": "কুড়িগ্রাম",
+   "text_bn": "(ক) কুড়িগ্রাম সদর উপজেলা (খ) রাজারহাট উপজেলা এবং (গ) ফুলবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুড়িগ্রাম সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাজারহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 27,
+   "name_bn": "কুড়িগ্রাম-৩",
+   "district_bn": "কুড়িগ্রাম",
+   "text_bn": "উলিপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "উলিপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 28,
+   "name_bn": "কুড়িগ্রাম-৪",
+   "district_bn": "কুড়িগ্রাম",
+   "text_bn": "(ক) রৌমারী উপজেলা (খ) চর রাজিবপুর উপজেলা এবং (গ) চিলমারী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রৌমারী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চর রাজিবপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চিলমারী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 29,
+   "name_bn": "গাইবান্ধা-১",
+   "district_bn": "গাইবান্ধা",
+   "text_bn": "সুন্দরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সুন্দরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 30,
+   "name_bn": "গাইবান্ধা-২",
+   "district_bn": "গাইবান্ধা",
+   "text_bn": "গাইবান্ধা সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গাইবান্ধা সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 31,
+   "name_bn": "গাইবান্ধা-৩",
+   "district_bn": "গাইবান্ধা",
+   "text_bn": "(ক) সাদুল্যাপুর উপজেলা এবং (খ) পলাশবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাদুল্যাপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পলাশবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 32,
+   "name_bn": "গাইবান্ধা-৪",
+   "district_bn": "গাইবান্ধা",
+   "text_bn": "গোবিন্দগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোবিন্দগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 33,
+   "name_bn": "গাইবান্ধা-৫",
+   "district_bn": "গাইবান্ধা",
+   "text_bn": "(ক) ফুলছড়ি উপজেলা এবং (খ) সাঘাটা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলছড়ি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাঘাটা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 34,
+   "name_bn": "জয়পুরহাট-১",
+   "district_bn": "জয়পুরহাট",
+   "text_bn": "(ক) জয়পুরহাট সদর উপজেলা এবং (খ) পাঁচবিবি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "জয়পুরহাট সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাঁচবিবি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 35,
+   "name_bn": "জয়পুরহাট-২",
+   "district_bn": "জয়পুরহাট",
+   "text_bn": "(ক) আক্কেলপুর উপজেলা (খ) ক্ষেতলাল উপজেলা এবং (গ) কালাই উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আক্কেলপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ক্ষেতলাল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালাই",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 36,
+   "name_bn": "বগুড়া-১",
+   "district_bn": "বগুড়া",
+   "text_bn": "(ক) সারিয়াকান্দি উপজেলা এবং (খ) সোনাতলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সারিয়াকান্দি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সোনাতলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 37,
+   "name_bn": "বগুড়া-২",
+   "district_bn": "বগুড়া",
+   "text_bn": "শিবগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শিবগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 38,
+   "name_bn": "বগুড়া-৩",
+   "district_bn": "বগুড়া",
+   "text_bn": "(ক) আদমদীঘি উপজেলা এবং (খ) দুপচাঁচিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আদমদীঘি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দুপচাঁচিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 39,
+   "name_bn": "বগুড়া-৪",
+   "district_bn": "বগুড়া",
+   "text_bn": "(ক) কাহালু উপজেলা এবং (খ) নন্দীগ্রাম উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাহালু",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নন্দীগ্রাম",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 40,
+   "name_bn": "বগুড়া-৫",
+   "district_bn": "বগুড়া",
+   "text_bn": "(ক) শেরপুর উপজেলা এবং (খ) ধুনট উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শেরপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধুনট",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 41,
+   "name_bn": "বগুড়া-৬",
+   "district_bn": "বগুড়া",
+   "text_bn": "বগুড়া সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বগুড়া সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 42,
+   "name_bn": "বগুড়া-৭",
+   "district_bn": "বগুড়া",
+   "text_bn": "(ক) গাবতলী উপজেলা এবং (খ) শাজাহানপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গাবতলী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শাজাহানপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 43,
+   "name_bn": "চাঁপাইনবাবগঞ্জ-১",
+   "district_bn": "চাঁপাইনবাবগঞ্জ",
+   "text_bn": "শিবগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শিবগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 44,
+   "name_bn": "চাঁপাইনবাবগঞ্জ-২",
+   "district_bn": "চাঁপাইনবাবগঞ্জ",
+   "text_bn": "(ক) ভোলাহাট উপজেলা (খ) গোমস্তাপুর উপজেলা এবং (গ) নাচোল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভোলাহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোমস্তাপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাচোল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 45,
+   "name_bn": "চাঁপাইনবাবগঞ্জ-৩",
+   "district_bn": "চাঁপাইনবাবগঞ্জ",
+   "text_bn": "চাঁপাইনবাবগঞ্জ সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চাঁপাইনবাবগঞ্জ সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 46,
+   "name_bn": "নওগাঁ-১",
+   "district_bn": "নওগাঁ",
+   "text_bn": "(ক) পোরশা উপজেলা (খ) সাপাহার উপজেলা এবং (গ) নিয়ামতপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পোরশা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাপাহার",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নিয়ামতপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 47,
+   "name_bn": "নওগাঁ-২",
+   "district_bn": "নওগাঁ",
+   "text_bn": "(ক) পত্নীতলা উপজেলা এবং (খ) ধামইরহাট উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পত্নীতলা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধামইরহাট",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 48,
+   "name_bn": "নওগাঁ-৩",
+   "district_bn": "নওগাঁ",
+   "text_bn": "(ক) বদলগাছী উপজেলা এবং (খ) মহাদেবপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বদলগাছী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মহাদেবপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 49,
+   "name_bn": "নওগাঁ-৪",
+   "district_bn": "নওগাঁ",
+   "text_bn": "মান্দা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মান্দা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 50,
+   "name_bn": "নওগাঁ-৫",
+   "district_bn": "নওগাঁ",
+   "text_bn": "নওগাঁ সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নওগাঁ সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 51,
+   "name_bn": "নওগাঁ-৬",
+   "district_bn": "নওগাঁ",
+   "text_bn": "(ক) রাণীনগর উপজেলা এবং (খ) আত্রাই উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাণীনগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আত্রাই",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 52,
+   "name_bn": "রাজশাহী-১",
+   "district_bn": "রাজশাহী",
+   "text_bn": "(ক) গোদাগাড়ী উপজেলা এবং (খ) তানোর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোদাগাড়ী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তানোর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 53,
+   "name_bn": "রাজশাহী-২",
+   "district_bn": "রাজশাহী",
+   "text_bn": "রাজশাহী সিটি কর্পোরেশনভুক্ত এলাকা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "রাজশাহী সিটি কর্পোরেশনভুক্ত এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 54,
+   "name_bn": "রাজশাহী-৩",
+   "district_bn": "রাজশাহী",
+   "text_bn": "(ক) পবা উপজেলা এবং (খ) মোহনপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পবা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মোহনপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 55,
+   "name_bn": "রাজশাহী-৪",
+   "district_bn": "রাজশাহী",
+   "text_bn": "বাগমারা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাগমারা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 56,
+   "name_bn": "রাজশাহী-৫",
+   "district_bn": "রাজশাহী",
+   "text_bn": "(ক) দূর্গাপুর উপজেলা এবং (খ) পুঠিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দূর্গাপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পুঠিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 57,
+   "name_bn": "রাজশাহী-৬",
+   "district_bn": "রাজশাহী",
+   "text_bn": "(ক) চারঘাট উপজেলা এবং (খ) বাঘা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চারঘাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাঘা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 58,
+   "name_bn": "নাটোর-১",
+   "district_bn": "নাটোর",
+   "text_bn": "(ক) লালপুর উপজেলা এবং (খ) বাগাতিপাড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "লালপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাগাতিপাড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 59,
+   "name_bn": "নাটোর-২",
+   "district_bn": "নাটোর",
+   "text_bn": "(ক) নাটোর সদর উপজেলা এবং (খ) নলডাঙ্গা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাটোর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নলডাঙ্গা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 60,
+   "name_bn": "নাটোর-৩",
+   "district_bn": "নাটোর",
+   "text_bn": "সিংড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সিংড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 61,
+   "name_bn": "নাটোর-৪",
+   "district_bn": "নাটোর",
+   "text_bn": "(ক) গুরুদাসপুর উপজেলা এবং (খ) বড়াইগ্রাম উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গুরুদাসপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বড়াইগ্রাম",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 62,
+   "name_bn": "সিরাজগঞ্জ-১",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "(ক) কাজিপুর উপজেলা এবং (খ) সিরাজগঞ্জ সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) মেছড়া (২) রতনকান্দি (৩) বাগবাটি ও (৪) ছোনগাছা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাজিপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সিরাজগঞ্জ সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "মেছড়া",
+      "রতনকান্দি",
+      "বাগবাটি",
+      "ছোনগাছা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 63,
+   "name_bn": "সিরাজগঞ্জ-২",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "(ক) সিরাজগঞ্জ সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) বহুলী (২) শিয়ালকোল (৩) খোকশাবাড়ী (৪) কাওয়াকোলা (৫) কালিয়াহরিপুর ও (৬) সয়দাবাদ ইউনিয়ন (খ) সিরাজগঞ্জ পৌরসভা এবং (গ) কামারখন্দ উপজেলা",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "সিরাজগঞ্জ সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "বহুলী",
+      "শিয়ালকোল",
+      "খোকশাবাড়ী",
+      "কাওয়াকোলা",
+      "কালিয়াহরিপুর",
+      "সয়দাবাদ"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "সিরাজগঞ্জ"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কামারখন্দ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 64,
+   "name_bn": "সিরাজগঞ্জ-৩",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "(ক) রায়গঞ্জ উপজেলা এবং (খ) তাড়াশ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রায়গঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তাড়াশ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 65,
+   "name_bn": "সিরাজগঞ্জ-৪",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "উল্লাপাড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "উল্লাপাড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 66,
+   "name_bn": "সিরাজগঞ্জ-৫",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "(ক) বেলকুচি উপজেলা এবং (খ) চৌহালী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বেলকুচি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চৌহালী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 67,
+   "name_bn": "সিরাজগঞ্জ-৬",
+   "district_bn": "সিরাজগঞ্জ",
+   "text_bn": "শাহজাদপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শাহজাদপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 68,
+   "name_bn": "পাবনা-১",
+   "district_bn": "পাবনা",
+   "text_bn": "সাঁথিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাঁথিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025 (restored by No. 66, 15 Jan 2026)"
+  },
+  {
+   "seat": 69,
+   "name_bn": "পাবনা-২",
+   "district_bn": "পাবনা",
+   "text_bn": "(ক) সুজানগর উপজেলা এবং (খ) বেড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সুজানগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বেড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025 (restored by No. 66, 15 Jan 2026)"
+  },
+  {
+   "seat": 70,
+   "name_bn": "পাবনা-৩",
+   "district_bn": "পাবনা",
+   "text_bn": "(ক) চাটমোহর উপজেলা (খ) ভাঙ্গুরা উপজেলা এবং (গ) ফরিদপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চাটমোহর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভাঙ্গুরা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফরিদপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 71,
+   "name_bn": "পাবনা-৪",
+   "district_bn": "পাবনা",
+   "text_bn": "(ক) আটঘরিয়া উপজেলা এবং (খ) ঈশ্বরদী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আটঘরিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঈশ্বরদী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 72,
+   "name_bn": "পাবনা-৫",
+   "district_bn": "পাবনা",
+   "text_bn": "পাবনা সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাবনা সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 73,
+   "name_bn": "মেহেরপুর-১",
+   "district_bn": "মেহেরপুর",
+   "text_bn": "(ক) মেহেরপুর সদর উপজেলা এবং (খ) মুজিবনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মেহেরপুর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুজিবনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 74,
+   "name_bn": "মেহেরপুর-২",
+   "district_bn": "মেহেরপুর",
+   "text_bn": "গাংনী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গাংনী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 75,
+   "name_bn": "কুষ্টিয়া-১",
+   "district_bn": "কুষ্টিয়া",
+   "text_bn": "দৌলতপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দৌলতপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 76,
+   "name_bn": "কুষ্টিয়া-২",
+   "district_bn": "কুষ্টিয়া",
+   "text_bn": "(ক) ভেড়ামারা উপজেলা এবং (খ) মিরপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভেড়ামারা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মিরপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 77,
+   "name_bn": "কুষ্টিয়া-৩",
+   "district_bn": "কুষ্টিয়া",
+   "text_bn": "কুষ্টিয়া সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুষ্টিয়া সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 78,
+   "name_bn": "কুষ্টিয়া-৪",
+   "district_bn": "কুষ্টিয়া",
+   "text_bn": "(ক) কুমারখালী উপজেলা এবং (খ) খোকশা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুমারখালী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "খোকশা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 79,
+   "name_bn": "চুয়াডাঙ্গা-১",
+   "district_bn": "চুয়াডাঙ্গা",
+   "text_bn": "(ক) আলমডাঙ্গা উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত চুয়াডাঙ্গা সদর উপজেলা : (১) তিতুদহ (২) বেগমপুর (৩) নেহালপুর ও (৪) গড়াইটুপি",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আলমডাঙ্গা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চুয়াডাঙ্গা সদর",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত : (১) তিতুদহ (২) বেগমপুর (৩) নেহালপুর ও (৪) গড়াইটুপি",
+     "except_unions_bn": [
+      "তিতুদহ",
+      "বেগমপুর",
+      "নেহালপুর",
+      "গড়াইটুপি"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 80,
+   "name_bn": "চুয়াডাঙ্গা-২",
+   "district_bn": "চুয়াডাঙ্গা",
+   "text_bn": "(ক) দামুড়হুদা উপজেলা (খ) জীবননগর উপজেলা এবং (গ) চুয়াডাঙ্গা সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহঃ (১) তিতুদহ (২) বেগমপুর (৩) নেহালপুর ও (৪) গড়াইটুপি ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দামুড়হুদা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জীবননগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "চুয়াডাঙ্গা সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "তিতুদহ",
+      "বেগমপুর",
+      "নেহালপুর",
+      "গড়াইটুপি"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 81,
+   "name_bn": "ঝিনাইদহ-১",
+   "district_bn": "ঝিনাইদহ",
+   "text_bn": "শৈলকূপা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শৈলকূপা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 82,
+   "name_bn": "ঝিনাইদহ-২",
+   "district_bn": "ঝিনাইদহ",
+   "text_bn": "(ক) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত ঝিনাইদহ সদর উপজেলা : (১) নলডাঙ্গা (২) ঘোড়শাল (৩) ফুরসন্দি ও (৪) মহারাজপুর ইউনিয়ন এবং (খ) হরিণাকুণ্ডু উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঝিনাইদহ সদর",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত : (১) নলডাঙ্গা (২) ঘোড়শাল (৩) ফুরসন্দি ও (৪) মহারাজপুর ইউনিয়ন",
+     "except_unions_bn": [
+      "নলডাঙ্গা",
+      "ঘোড়শাল",
+      "ফুরসন্দি",
+      "মহারাজপুর"
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হরিণাকুণ্ডু",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 83,
+   "name_bn": "ঝিনাইদহ-৩",
+   "district_bn": "ঝিনাইদহ",
+   "text_bn": "(ক) কোটচাঁদপুর উপজেলা এবং (খ) মহেশপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কোটচাঁদপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মহেশপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 84,
+   "name_bn": "ঝিনাইদহ-৪",
+   "district_bn": "ঝিনাইদহ",
+   "text_bn": "(ক) কালীগঞ্জ উপজেলা এবং (খ) ঝিনাইদহ সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) নলডাঙ্গা (২) ঘোড়শাল (৩) ফুরসন্দি ও (৪) মহারাজপুর ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "ঝিনাইদহ সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "নলডাঙ্গা",
+      "ঘোড়শাল",
+      "ফুরসন্দি",
+      "মহারাজপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 85,
+   "name_bn": "যশোর-১",
+   "district_bn": "যশোর",
+   "text_bn": "শার্শা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শার্শা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 86,
+   "name_bn": "যশোর-২",
+   "district_bn": "যশোর",
+   "text_bn": "(ক) চৌগাছা উপজেলা এবং (খ) ঝিকরগাছা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চৌগাছা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঝিকরগাছা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 87,
+   "name_bn": "যশোর-৩",
+   "district_bn": "যশোর",
+   "text_bn": "বসুন্দিয়া ইউনিয়ন ব্যতীত যশোর সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "যশোর সদর",
+     "mode": "whole_except",
+     "except_text_bn": "বসুন্দিয়া ইউনিয়ন ব্যতীত",
+     "except_unions_bn": [
+      "বসুন্দিয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 88,
+   "name_bn": "যশোর-৪",
+   "district_bn": "যশোর",
+   "text_bn": "(ক) বাঘারপাড়া উপজেলা (খ) অভয়নগর উপজেলা এবং (গ) যশোর সদর উপজেলার বসুন্দিয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাঘারপাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "অভয়নগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "যশোর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "বসুন্দিয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 89,
+   "name_bn": "যশোর-৫",
+   "district_bn": "যশোর",
+   "text_bn": "মনিরামপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মনিরামপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 90,
+   "name_bn": "যশোর-৬",
+   "district_bn": "যশোর",
+   "text_bn": "কেশবপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কেশবপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 91,
+   "name_bn": "মাগুরা-১",
+   "district_bn": "মাগুরা",
+   "text_bn": "(ক) শ্রীপুর উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত মাগুরা সদর উপজেলা :- (১) শত্রুজিৎপুর (২) গোপালগ্রাম (৩) কুচিয়ামোড়া ও (৪) বেরইল পলিতা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্রীপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মাগুরা সদর",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত :- (১) শত্রুজিৎপুর (২) গোপালগ্রাম (৩) কুচিয়ামোড়া ও (৪) বেরইল পলিতা ইউনিয়ন",
+     "except_unions_bn": [
+      "শত্রুজিৎপুর",
+      "গোপালগ্রাম",
+      "কুচিয়ামোড়া",
+      "বেরইল পলিতা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 92,
+   "name_bn": "মাগুরা-২",
+   "district_bn": "মাগুরা",
+   "text_bn": "(ক) মহম্মদপুর উপজেলা (খ) শালিখা উপজেলা এবং (গ) মাগুরা সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) শত্রুজিৎপুর (২) গোপালগ্রাম (৩) কুচিয়ামোড়া ও (৪) বেরইল পলিতা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মহম্মদপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শালিখা",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "মাগুরা সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "শত্রুজিৎপুর",
+      "গোপালগ্রাম",
+      "কুচিয়ামোড়া",
+      "বেরইল পলিতা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 93,
+   "name_bn": "নড়াইল-১",
+   "district_bn": "নড়াইল",
+   "text_bn": "(ক) কালিয়া উপজেলা এবং (খ) নড়াইল সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) কলোড়া (২) বিছালি (৩) ভদ্রবিলা (৪) সিঙ্গাশোলপুর ও (৫) শেখহাটি ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "নড়াইল সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "কলোড়া",
+      "বিছালি",
+      "ভদ্রবিলা",
+      "সিঙ্গাশোলপুর",
+      "শেখহাটি"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 94,
+   "name_bn": "নড়াইল-২",
+   "district_bn": "নড়াইল",
+   "text_bn": "(ক) লোহাগড়া উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত নড়াইল সদর উপজেলা : (১) কলোড়া (২) বিছালী (৩) ভদ্রবিলা (৪) সিঙ্গাশোলপুর ও (৫) শেখহাটি ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "লোহাগড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নড়াইল সদর",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত : (১) কলোড়া (২) বিছালী (৩) ভদ্রবিলা (৪) সিঙ্গাশোলপুর ও (৫) শেখহাটি ইউনিয়ন",
+     "except_unions_bn": [
+      "কলোড়া",
+      "বিছালী",
+      "ভদ্রবিলা",
+      "সিঙ্গাশোলপুর",
+      "শেখহাটি"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 95,
+   "name_bn": "বাগেরহাট-১",
+   "district_bn": "বাগেরহাট",
+   "text_bn": "(ক) ফকিরহাট উপজেলা (খ) মোল্লাহাট উপজেলা এবং (গ) চিতলমারী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফকিরহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মোল্লাহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চিতলমারী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 96,
+   "name_bn": "বাগেরহাট-২",
+   "district_bn": "বাগেরহাট",
+   "text_bn": "(ক) বাগেরহাট সদর উপজেলা এবং (খ) কচুয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাগেরহাট সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কচুয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 97,
+   "name_bn": "বাগেরহাট-৩",
+   "district_bn": "বাগেরহাট",
+   "text_bn": "(ক) রামপাল উপজেলা এবং (গ) মোংলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রামপাল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মোংলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 98,
+   "name_bn": "বাগেরহাট-৪",
+   "district_bn": "বাগেরহাট",
+   "text_bn": "(খ) মোড়েলগঞ্জ উপজেলা এবং (গ) শরণখোলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মোড়েলগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শরণখোলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 99,
+   "name_bn": "খুলনা-১",
+   "district_bn": "খুলনা",
+   "text_bn": "(ক) বটিয়াঘাটা উপজেলা এবং (খ) দাকোপ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বটিয়াঘাটা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দাকোপ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 100,
+   "name_bn": "খুলনা-২",
+   "district_bn": "খুলনা",
+   "text_bn": "খুলনা সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১৬, ১৭, ১৮, ১৯, ২০, ২১, ২২, ২৩, ২৪, ২৫, ২৬, ২৭, ২৮, ২৯, ৩০ এবং ৩১",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "খুলনা",
+     "wards": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 101,
+   "name_bn": "খুলনা-৩",
+   "district_bn": "খুলনা",
+   "text_bn": "(ক) খুলনা সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯, ১০, ১১, ১২, ১৩, ১৪ এবং ১৫ (খ) দিঘলিয়া উপজেলার আড়ংঘাটা ও যোগীপোল ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "খুলনা",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "দিঘলিয়া",
+     "mode": "listed",
+     "unions_bn": [
+      "আড়ংঘাটা",
+      "যোগীপোল"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 102,
+   "name_bn": "খুলনা-৪",
+   "district_bn": "খুলনা",
+   "text_bn": "(ক) আড়ংঘাটা ও যোগীপোল ইউনিয়ন ব্যতীত দিঘলিয়া উপজেলা (খ) রূপসা উপজেলা এবং (গ) তেরখাদা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দিঘলিয়া",
+     "mode": "whole_except",
+     "except_text_bn": "আড়ংঘাটা ও যোগীপোল ইউনিয়ন ব্যতীত",
+     "except_unions_bn": [
+      "আড়ংঘাটা",
+      "যোগীপোল"
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "রূপসা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তেরখাদা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 103,
+   "name_bn": "খুলনা-৫",
+   "district_bn": "খুলনা",
+   "text_bn": "(ক) ফুলতলা উপজেলা, (খ) ডুমুরিয়া উপজেলা এবং (গ) গিলাতলা ক্যান্টনমেন্ট এলাকা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলতলা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ডুমুরিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "other",
+     "text_bn": "গিলাতলা ক্যান্টনমেন্ট এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 104,
+   "name_bn": "খুলনা-৬",
+   "district_bn": "খুলনা",
+   "text_bn": "(ক) কয়রা উপজেলা এবং (খ) পাইকগাছা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কয়রা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাইকগাছা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 105,
+   "name_bn": "সাতক্ষীরা-১",
+   "district_bn": "সাতক্ষীরা",
+   "text_bn": "(ক) কলারোয়া উপজেলা এবং (খ) তালা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কলারোয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তালা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 106,
+   "name_bn": "সাতক্ষীরা-২",
+   "district_bn": "সাতক্ষীরা",
+   "text_bn": "(ক) সাতক্ষীরা সদর উপজেলা এবং (খ) দেবহাটা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাতক্ষীরা সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দেবহাটা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 107,
+   "name_bn": "সাতক্ষীরা-৩",
+   "district_bn": "সাতক্ষীরা",
+   "text_bn": "(ক) কালিগঞ্জ উপজেলা এবং (খ) আশাশুনি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালিগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আশাশুনি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 108,
+   "name_bn": "সাতক্ষীরা-৪",
+   "district_bn": "সাতক্ষীরা",
+   "text_bn": "শ্যামনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্যামনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 109,
+   "name_bn": "বরগুনা-১",
+   "district_bn": "বরগুনা",
+   "text_bn": "(ক) বরগুনা সদর উপজেলা, (খ) আমতলী উপজেলা এবং (গ) তালতলি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বরগুনা সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আমতলী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তালতলি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 110,
+   "name_bn": "বরগুনা-২",
+   "district_bn": "বরগুনা",
+   "text_bn": "(ক) বামনা উপজেলা, (খ) পাথরঘাটা উপজেলা এবং (গ) বেতাগী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বামনা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাথরঘাটা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বেতাগী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 111,
+   "name_bn": "পটুয়াখালী-১",
+   "district_bn": "পটুয়াখালী",
+   "text_bn": "(ক) পটুয়াখালী সদর উপজেলা, (খ) মির্জাগঞ্জ উপজেলা এবং (গ) দুমকি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পটুয়াখালী সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মির্জাগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দুমকি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 112,
+   "name_bn": "পটুয়াখালী-২",
+   "district_bn": "পটুয়াখালী",
+   "text_bn": "বাউফল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাউফল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 113,
+   "name_bn": "পটুয়াখালী-৩",
+   "district_bn": "পটুয়াখালী",
+   "text_bn": "(ক) দশমিনা উপজেলা এবং (খ) গলাচিপা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দশমিনা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গলাচিপা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 114,
+   "name_bn": "পটুয়াখালী-৪",
+   "district_bn": "পটুয়াখালী",
+   "text_bn": "(ক) কলাপাড়া উপজেলা এবং (খ) রাঙ্গাবালী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কলাপাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাঙ্গাবালী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 115,
+   "name_bn": "ভোলা-১",
+   "district_bn": "ভোলা",
+   "text_bn": "ভোলা সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভোলা সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 116,
+   "name_bn": "ভোলা-২",
+   "district_bn": "ভোলা",
+   "text_bn": "(ক) দৌলতখান উপজেলা এবং (খ) বোরহানউদ্দিন উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দৌলতখান",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বোরহানউদ্দিন",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 117,
+   "name_bn": "ভোলা-৩",
+   "district_bn": "ভোলা",
+   "text_bn": "(ক) তজুমদ্দিন উপজেলা এবং (খ) লালমোহন উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "তজুমদ্দিন",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "লালমোহন",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 118,
+   "name_bn": "ভোলা-৪",
+   "district_bn": "ভোলা",
+   "text_bn": "(ক) মনপুরা উপজেলা এবং (খ) চরফ্যাশন উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মনপুরা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চরফ্যাশন",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 119,
+   "name_bn": "বরিশাল-১",
+   "district_bn": "বরিশাল",
+   "text_bn": "(ক) গৌরনদী উপজেলা এবং (খ) আগৈলঝাড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গৌরনদী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আগৈলঝাড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 120,
+   "name_bn": "বরিশাল-২",
+   "district_bn": "বরিশাল",
+   "text_bn": "(ক) উজিরপুর উপজেলা এবং (খ) বানারীপাড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "উজিরপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বানারীপাড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 121,
+   "name_bn": "বরিশাল-৩",
+   "district_bn": "বরিশাল",
+   "text_bn": "(ক) মুলাদী উপজেলা এবং (খ) বাবুগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুলাদী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাবুগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 122,
+   "name_bn": "বরিশাল-৪",
+   "district_bn": "বরিশাল",
+   "text_bn": "(ক) মেহেন্দিগঞ্জ উপজেলা এবং (খ) হিজলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মেহেন্দিগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হিজলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 123,
+   "name_bn": "বরিশাল-৫",
+   "district_bn": "বরিশাল",
+   "text_bn": "(ক) বরিশাল সিটি কর্পোরেশনভুক্ত এলাকা এবং (খ) বরিশাল সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "বরিশাল সিটি কর্পোরেশনভুক্ত এলাকা"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বরিশাল সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 124,
+   "name_bn": "বরিশাল-৬",
+   "district_bn": "বরিশাল",
+   "text_bn": "বাকেরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাকেরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 125,
+   "name_bn": "ঝালকাঠি-১",
+   "district_bn": "ঝালকাঠি",
+   "text_bn": "(ক) রাজাপুর উপজেলা এবং (খ) কাঁঠালিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাজাপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাঁঠালিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 126,
+   "name_bn": "ঝালকাঠি-২",
+   "district_bn": "ঝালকাঠি",
+   "text_bn": "(ক) ঝালকাঠি সদর উপজেলা এবং (খ) নলছিটি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঝালকাঠি সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নলছিটি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 127,
+   "name_bn": "পিরোজপুর-১",
+   "district_bn": "পিরোজপুর",
+   "text_bn": "(ক) পিরোজপুর সদর উপজেলা, (খ) নাজিরপুর উপজেলা এবং (গ) ইন্দুরকানী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পিরোজপুর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাজিরপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ইন্দুরকানী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 128,
+   "name_bn": "পিরোজপুর-২",
+   "district_bn": "পিরোজপুর",
+   "text_bn": "(ক) কাউখালী উপজেলা, (খ) ভান্ডারিয়া উপজেলা এবং (গ) নেছারাবাদ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাউখালী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভান্ডারিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নেছারাবাদ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 129,
+   "name_bn": "পিরোজপুর-৩",
+   "district_bn": "পিরোজপুর",
+   "text_bn": "মঠবাড়ীয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মঠবাড়ীয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 130,
+   "name_bn": "টাঙ্গাইল-১",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "(ক) মধুপুর উপজেলা এবং (খ) ধনবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মধুপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধনবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 131,
+   "name_bn": "টাঙ্গাইল-২",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "(ক) গোপালপুর উপজেলা এবং (খ) ভূঞাপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোপালপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভূঞাপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 132,
+   "name_bn": "টাঙ্গাইল-৩",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "ঘাটাইল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঘাটাইল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 133,
+   "name_bn": "টাঙ্গাইল-৪",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "কালিহাতী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালিহাতী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 134,
+   "name_bn": "টাঙ্গাইল-৫",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "টাঙ্গাইল সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "টাঙ্গাইল সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 135,
+   "name_bn": "টাঙ্গাইল-৬",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "(ক) দেলদুয়ার উপজেলা এবং (খ) নাগরপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দেলদুয়ার",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাগরপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 136,
+   "name_bn": "টাঙ্গাইল-৭",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "মির্জাপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মির্জাপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 137,
+   "name_bn": "টাঙ্গাইল-৮",
+   "district_bn": "টাঙ্গাইল",
+   "text_bn": "(ক) বাসাইল উপজেলা এবং (খ) সখিপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাসাইল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সখিপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 138,
+   "name_bn": "জামালপুর-১",
+   "district_bn": "জামালপুর",
+   "text_bn": "(ক) বকশীগঞ্জ উপজেলা এবং (খ) দেওয়ানগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বকশীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দেওয়ানগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 139,
+   "name_bn": "জামালপুর-২",
+   "district_bn": "জামালপুর",
+   "text_bn": "ইসলামপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ইসলামপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 140,
+   "name_bn": "জামালপুর-৩",
+   "district_bn": "জামালপুর",
+   "text_bn": "(ক) মাদারগঞ্জ উপজেলা এবং (খ) মেলান্দহ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মাদারগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মেলান্দহ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 141,
+   "name_bn": "জামালপুর-৪",
+   "district_bn": "জামালপুর",
+   "text_bn": "সরিষাবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সরিষাবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 142,
+   "name_bn": "জামালপুর-৫",
+   "district_bn": "জামালপুর",
+   "text_bn": "জামালপুর সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "জামালপুর সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 143,
+   "name_bn": "শেরপুর-১",
+   "district_bn": "শেরপুর",
+   "text_bn": "শেরপুর সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শেরপুর সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 144,
+   "name_bn": "শেরপুর-২",
+   "district_bn": "শেরপুর",
+   "text_bn": "(ক) নকলা উপজেলা এবং (খ) নালিতাবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নকলা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নালিতাবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 145,
+   "name_bn": "শেরপুর-৩",
+   "district_bn": "শেরপুর",
+   "text_bn": "(ক) শ্রীবরদী উপজেলা এবং (খ) ঝিনাইগাতী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্রীবরদী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঝিনাইগাতী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 146,
+   "name_bn": "ময়মনসিংহ-১",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "(ক) হালুয়াঘাট উপজেলা এবং (খ) ধোবাউড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হালুয়াঘাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধোবাউড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 147,
+   "name_bn": "ময়মনসিংহ-২",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "(ক) ফুলপুর উপজেলা এবং (খ) তারাকান্দা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তারাকান্দা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 148,
+   "name_bn": "ময়মনসিংহ-৩",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "গৌরীপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গৌরীপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 149,
+   "name_bn": "ময়মনসিংহ-৪",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "(ক) ময়মনসিংহ সিটি কর্পোরেশনভুক্ত এলাকা এবং (খ) ময়মনসিংহ সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "ময়মনসিংহ সিটি কর্পোরেশনভুক্ত এলাকা"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ময়মনসিংহ সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 150,
+   "name_bn": "ময়মনসিংহ-৫",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "মুক্তাগাছা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুক্তাগাছা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 151,
+   "name_bn": "ময়মনসিংহ-৬",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "ফুলবাড়ীয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলবাড়ীয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 152,
+   "name_bn": "ময়মনসিংহ-৭",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "ত্রিশাল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ত্রিশাল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 153,
+   "name_bn": "ময়মনসিংহ-৮",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "ঈশ্বরগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঈশ্বরগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 154,
+   "name_bn": "ময়মনসিংহ-৯",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "নান্দাইল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নান্দাইল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 155,
+   "name_bn": "ময়মনসিংহ-১০",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "গফরগাঁও উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গফরগাঁও",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 156,
+   "name_bn": "ময়মনসিংহ-১১",
+   "district_bn": "ময়মনসিংহ",
+   "text_bn": "ভালুকা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভালুকা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 157,
+   "name_bn": "নেত্রকোণা-১",
+   "district_bn": "নেত্রকোণা",
+   "text_bn": "(ক) কলমাকান্দা উপজেলা এবং (খ) দূর্গাপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কলমাকান্দা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দূর্গাপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 158,
+   "name_bn": "নেত্রকোণা-২",
+   "district_bn": "নেত্রকোণা",
+   "text_bn": "(ক) নেত্রকোণা সদর উপজেলা এবং (খ) বারহাট্টা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নেত্রকোণা সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বারহাট্টা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 159,
+   "name_bn": "নেত্রকোণা-৩",
+   "district_bn": "নেত্রকোণা",
+   "text_bn": "(ক) আটপাড়া উপজেলা এবং (খ) কেন্দুয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আটপাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কেন্দুয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 160,
+   "name_bn": "নেত্রকোণা-৪",
+   "district_bn": "নেত্রকোণা",
+   "text_bn": "(ক) মোহনগঞ্জ উপজেলা, (খ) মদন উপজেলা এবং (গ) খালিয়াজুরী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মোহনগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মদন",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "খালিয়াজুরী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 161,
+   "name_bn": "নেত্রকোণা-৫",
+   "district_bn": "নেত্রকোণা",
+   "text_bn": "পূর্বধলা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পূর্বধলা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 162,
+   "name_bn": "কিশোরগঞ্জ-১",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) কিশোরগঞ্জ সদর উপজেলা এবং (খ) হোসেনপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কিশোরগঞ্জ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হোসেনপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 163,
+   "name_bn": "কিশোরগঞ্জ-২",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) কটিয়াদী উপজেলা এবং (খ) পাকুন্দিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কটিয়াদী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাকুন্দিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 164,
+   "name_bn": "কিশোরগঞ্জ-৩",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) তাড়াইল উপজেলা এবং (খ) করিমগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "তাড়াইল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "করিমগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 165,
+   "name_bn": "কিশোরগঞ্জ-৪",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) ইটনা উপজেলা, (খ) মিঠামইন উপজেলা এবং (গ) অষ্টগ্রাম উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ইটনা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মিঠামইন",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "অষ্টগ্রাম",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 166,
+   "name_bn": "কিশোরগঞ্জ-৫",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) নিকলী উপজেলা এবং (খ) বাজিতপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নিকলী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাজিতপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 167,
+   "name_bn": "কিশোরগঞ্জ-৬",
+   "district_bn": "কিশোরগঞ্জ",
+   "text_bn": "(ক) কুলিয়ারচর উপজেলা এবং (খ) ভৈরব উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুলিয়ারচর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভৈরব",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 168,
+   "name_bn": "মানিকগঞ্জ-১",
+   "district_bn": "মানিকগঞ্জ",
+   "text_bn": "(ক) দৌলতপুর উপজেলা (খ) ঘিওর উপজেলা এবং (গ) শিবালয় উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দৌলতপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঘিওর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শিবালয়",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 169,
+   "name_bn": "মানিকগঞ্জ-২",
+   "district_bn": "মানিকগঞ্জ",
+   "text_bn": "(ক) সিঙ্গাইর উপজেলা (খ) হরিরামপুর উপজেলা এবং (গ) মানিকগঞ্জ সদর উপজেলার হাটিপাড়া ও ভাড়ারিয়া ইউনিয়নসমূহ",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সিঙ্গাইর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হরিরামপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "মানিকগঞ্জ সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "হাটিপাড়া",
+      "ভাড়ারিয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 170,
+   "name_bn": "মানিকগঞ্জ-৩",
+   "district_bn": "মানিকগঞ্জ",
+   "text_bn": "(ক) হাটিপাড়া ও ভাড়ারিয়া ইউনিয়নসমূহ ব্যতীত মানিকগঞ্জ সদর উপজেলা এবং (খ) সাটুরিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মানিকগঞ্জ সদর",
+     "mode": "whole_except",
+     "except_text_bn": "হাটিপাড়া ও ভাড়ারিয়া ইউনিয়নসমূহ ব্যতীত",
+     "except_unions_bn": [
+      "হাটিপাড়া",
+      "ভাড়ারিয়া"
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাটুরিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 171,
+   "name_bn": "মুন্সীগঞ্জ-১",
+   "district_bn": "মুন্সীগঞ্জ",
+   "text_bn": "(ক) শ্রীনগর উপজেলা এবং (খ) সিরাজদিখান উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্রীনগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সিরাজদিখান",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 172,
+   "name_bn": "মুন্সীগঞ্জ-২",
+   "district_bn": "মুন্সীগঞ্জ",
+   "text_bn": "(ক) লৌহজং উপজেলা এবং (খ) টংগিবাড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "লৌহজং",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "টংগিবাড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 173,
+   "name_bn": "মুন্সীগঞ্জ-৩",
+   "district_bn": "মুন্সীগঞ্জ",
+   "text_bn": "(ক) মুন্সীগঞ্জ সদর উপজেলা এবং (খ) গজারিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুন্সীগঞ্জ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গজারিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 174,
+   "name_bn": "ঢাকা-১",
+   "district_bn": "ঢাকা",
+   "text_bn": "(ক) দোহার উপজেলা এবং (খ) নবাবগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দোহার",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "নবাবগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 175,
+   "name_bn": "ঢাকা-২",
+   "district_bn": "ঢাকা",
+   "text_bn": "(ক) কেরানীগঞ্জ উপজেলার নিম্নলিখিত ইউনিয়নসমূহ:- (১) তারানগর (২) কলাতিয়া (৩) হযরতপুর (৪) রোহিতপুর (৫) শাক্তা (৬) কালিন্দী ও (৭) বাস্তা ইউনিয়ন এবং (খ) সাভার উপজেলার নিম্নলিখিত ইউনিয়নসমূহ:- (১) আমিনবাজার (২) তেঁতুলঝোড়া ও (৩) ভাকুর্তা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "কেরানীগঞ্জ",
+     "mode": "listed",
+     "unions_bn": [
+      "তারানগর",
+      "কলাতিয়া",
+      "হযরতপুর",
+      "রোহিতপুর",
+      "শাক্তা",
+      "কালিন্দী",
+      "বাস্তা"
+     ]
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সাভার",
+     "mode": "listed",
+     "unions_bn": [
+      "আমিনবাজার",
+      "তেঁতুলঝোড়া",
+      "ভাকুর্তা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 176,
+   "name_bn": "ঢাকা-৩",
+   "district_bn": "ঢাকা",
+   "text_bn": "কেরানীগঞ্জ উপজেলার নিম্নলিখিত ইউনিয়নসমূহ: (১) জিনজিরা (২) আগানগর (৩) তেঘরিয়া (৪) কোন্ডা ও (৫) শুভাড্যা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "কেরানীগঞ্জ",
+     "mode": "listed",
+     "unions_bn": [
+      "জিনজিরা",
+      "আগানগর",
+      "তেঘরিয়া",
+      "কোন্ডা",
+      "শুভাড্যা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 177,
+   "name_bn": "ঢাকা-৪",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ৪৭, ৫১, ৫২, ৫৩, ৫৪, ৫৮, ৫৯, ৬০ এবং ৬১",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      47,
+      51,
+      52,
+      53,
+      54,
+      58,
+      59,
+      60,
+      61
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 178,
+   "name_bn": "ঢাকা-৫",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ৪৮, ৪৯, ৫০, ৬২, ৬৩, ৬৪, ৬৫, ৬৬, ৬৭, ৬৮, ৬৯ এবং ৭০",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      48,
+      49,
+      50,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 179,
+   "name_bn": "ঢাকা-৬",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ৩৪, ৩৭, ৩৮, ৩৯, ৪০, ৪১, ৪২, ৪৩, ৪৪, ৪৫ ও ৪৬",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      34,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 180,
+   "name_bn": "ঢাকা-৭",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ২৩, ২৪, ২৫, ২৬, ২৭, ২৮, ২৯, ৩০, ৩১, ৩২, ৩৩, ৩৫, ৩৬, ৫৬ ও ৫৭",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      56,
+      57
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 181,
+   "name_bn": "ঢাকা-৮",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ০৮, ০৯, ১০, ১১, ১২, ১৩, ১৯, ২০ ও ২১",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      19,
+      20,
+      21
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 182,
+   "name_bn": "ঢাকা-৯",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর -০১, ০২, ০৩, ০৪, ০৫, ০৬, ০৭, ৭১, ৭২, ৭৩, ৭৪ ও ৭৫",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      71,
+      72,
+      73,
+      74,
+      75
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 183,
+   "name_bn": "ঢাকা-১০",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশনের ওয়ার্ড নম্বর-১৪, ১৫, ১৬, ১৭, ১৮, ২২ ও ৫৫",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা দক্ষিণ",
+     "wards": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      55
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 184,
+   "name_bn": "ঢাকা-১১",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-২১, ২২, ২৩, ৩৭, ৩৮, ৩৯, ৪০, ৪১ ও ৪২",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      21,
+      22,
+      23,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 185,
+   "name_bn": "ঢাকা-১২",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-২৪, ২৫, ২৬, ২৭, ৩৫ ও ৩৬",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      24,
+      25,
+      26,
+      27,
+      35,
+      36
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 186,
+   "name_bn": "ঢাকা-১৩",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-২৮, ২৯, ৩০, ৩১, ৩২, ৩৩ ও ৩৪",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 187,
+   "name_bn": "ঢাকা-১৪",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০৭, ০৮, ০৯, ১০, ১১ ও ১২ এবং সাভার উপজেলার কাউন্দিয়া ও বনগাঁও ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সাভার",
+     "mode": "listed",
+     "unions_bn": [
+      "কাউন্দিয়া",
+      "বনগাঁও"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 188,
+   "name_bn": "ঢাকা-১৫",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০৪, ১৩, ১৪ ও ১৬",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      4,
+      13,
+      14,
+      16
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 189,
+   "name_bn": "ঢাকা-১৬",
+   "district_bn": "ঢাকা",
+   "text_bn": "ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০২, ০৩, ০৫ ও ০৬",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      2,
+      3,
+      5,
+      6
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 190,
+   "name_bn": "ঢাকা-১৭",
+   "district_bn": "ঢাকা",
+   "text_bn": "(ক) ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-১৫, ১৮, ১৯ ও ২০ এবং (খ) ঢাকা ক্যান্টনমেন্ট এলাকা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      15,
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "kind": "other",
+     "text_bn": "ঢাকা ক্যান্টনমেন্ট এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 191,
+   "name_bn": "ঢাকা-১৮",
+   "district_bn": "ঢাকা",
+   "text_bn": "(ক) ঢাকা উত্তর সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০১, ১৭, ৪৩, ৪৪, ৪৫, ৪৬, ৪৭, ৪৮, ৪৯, ৫০, ৫১, ৫২, ৫৩, ৫৪ ও বিমানবন্দর এলাকা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "ঢাকা উত্তর",
+     "wards": [
+      1,
+      17,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+     ]
+    },
+    {
+     "kind": "other",
+     "text_bn": "বিমানবন্দর এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 192,
+   "name_bn": "ঢাকা-১৯",
+   "district_bn": "ঢাকা",
+   "text_bn": "(ক) সাভার উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) শিমুলিয়া (২) ধামসোনা (৩) ইয়ারপুর (৪) আশুলিয়া (৫) বিরুলিয়া (৬) পাথালিয়া ইউনিয়ন ও (৭) সাভার ইউনিয়ন (খ) সাভার পৌরসভা এবং (গ) সাভার সেনানিবাস এলাকা",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "সাভার",
+     "mode": "listed",
+     "unions_bn": [
+      "শিমুলিয়া",
+      "ধামসোনা",
+      "ইয়ারপুর",
+      "আশুলিয়া",
+      "বিরুলিয়া",
+      "পাথালিয়া",
+      "সাভার"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "সাভার"
+    },
+    {
+     "kind": "other",
+     "text_bn": "সাভার সেনানিবাস এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 193,
+   "name_bn": "ঢাকা-২০",
+   "district_bn": "ঢাকা",
+   "text_bn": "ধামরাই উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধামরাই",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 194,
+   "name_bn": "গাজীপুর-১",
+   "district_bn": "গাজীপুর",
+   "text_bn": "(ক) কালিয়াকৈর উপজেলা এবং (খ) গাজীপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯, ১০, ১১, ১২, ১৩, ১৪, ১৫, ১৬, ১৭ এবং ১৮",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালিয়াকৈর",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "গাজীপুর",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 195,
+   "name_bn": "গাজীপুর-২",
+   "district_bn": "গাজীপুর",
+   "text_bn": "(ক) গাজীপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১৯, ২০, ২১, ২২, ২৩, ২৪, ২৫, ২৬, ২৭, ২৮, ২৯, ৩০, ৩১, ৩২, ৩৩, ৩৪, ৩৫, ৩৬, ৩৭, ৩৮ এবং ৩৯ (খ) গাজীপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ৪৩, ৪৪, ৪৫, ৪৬, ৪৭, ৪৮, ৪৯, ৫০, ৫১, ৫২, ৫৩, ৫৪, ৫৫, ৫৬ ও ৫৭ এবং (গ) গাজীপুর সেনানিবাস এলাকা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "গাজীপুর",
+     "wards": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+     ]
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "গাজীপুর",
+     "wards": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ]
+    },
+    {
+     "kind": "other",
+     "text_bn": "গাজীপুর সেনানিবাস এলাকা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 196,
+   "name_bn": "গাজীপুর-৩",
+   "district_bn": "গাজীপুর",
+   "text_bn": "(ক) শ্রীপুর উপজেলা এবং (খ) গাজীপুর সদর উপজেলার মির্জাপুর, ভাওয়ালগড় ও পিরুজালী ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্রীপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "গাজীপুর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "মির্জাপুর",
+      "ভাওয়ালগড়",
+      "পিরুজালী"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 197,
+   "name_bn": "গাজীপুর-৪",
+   "district_bn": "গাজীপুর",
+   "text_bn": "কাপাসিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাপাসিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 198,
+   "name_bn": "গাজীপুর-৫",
+   "district_bn": "গাজীপুর",
+   "text_bn": "(ক) কালিগঞ্জ উপজেলা (খ) গাজীপুর সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ৪০, ৪১ ও ৪২ এবং (গ) গাজীপুর সদর উপজেলার বাড়িয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালিগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "গাজীপুর",
+     "wards": [
+      40,
+      41,
+      42
+     ]
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "গাজীপুর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "বাড়িয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 199,
+   "name_bn": "নরসিংদী-১",
+   "district_bn": "নরসিংদী",
+   "text_bn": "নিম্নবর্ণিত ইউনিয়ন ব্যতীত নরসিংদী সদর উপজেলা : (১) আমদিয়া (২) পাচদোনা ও (৩) মেহের পাড়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নরসিংদী সদর",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নবর্ণিত ইউনিয়ন ব্যতীত: (১) আমদিয়া (২) পাচদোনা ও (৩) মেহের পাড়া ইউনিয়ন",
+     "except_unions_bn": [
+      "আমদিয়া",
+      "পাচদোনা",
+      "মেহের পাড়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 200,
+   "name_bn": "নরসিংদী-২",
+   "district_bn": "নরসিংদী",
+   "text_bn": "(ক) পলাশ উপজেলা এবং (খ) নরসিংদী সদর উপজেলার নিম্নবর্ণিত ইউনিয়নসমূহ: (১) আমদিয়া (২) পাচদোনা ও (৩) মেহের পাড়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পলাশ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "নরসিংদী সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "আমদিয়া",
+      "পাচদোনা",
+      "মেহের পাড়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 201,
+   "name_bn": "নরসিংদী-৩",
+   "district_bn": "নরসিংদী",
+   "text_bn": "শিবপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শিবপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 202,
+   "name_bn": "নরসিংদী-৪",
+   "district_bn": "নরসিংদী",
+   "text_bn": "(ক) মনোহরদী উপজেলা এবং (খ) বেলাবো উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মনোহরদী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বেলাবো",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 203,
+   "name_bn": "নরসিংদী-৫",
+   "district_bn": "নরসিংদী",
+   "text_bn": "রায়পুরা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রায়পুরা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 204,
+   "name_bn": "নারায়ণগঞ্জ-১",
+   "district_bn": "নারায়ণগঞ্জ",
+   "text_bn": "রূপগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রূপগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 205,
+   "name_bn": "নারায়ণগঞ্জ-২",
+   "district_bn": "নারায়ণগঞ্জ",
+   "text_bn": "আড়াইহাজার উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আড়াইহাজার",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 206,
+   "name_bn": "নারায়ণগঞ্জ-৩",
+   "district_bn": "নারায়ণগঞ্জ",
+   "text_bn": "(ক) সোনারগাঁও উপজেলা এবং (খ) সিদ্ধিরগঞ্জ থানা (নারায়ণগঞ্জ সিটি কর্পোরেশনের ওয়ার্ড নম্বর-১ - ১০)",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সোনারগাঁও",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "নারায়ণগঞ্জ",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "label_bn": "সিদ্ধিরগঞ্জ থানা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 207,
+   "name_bn": "নারায়ণগঞ্জ-৪",
+   "district_bn": "নারায়ণগঞ্জ",
+   "text_bn": "(ক) নারায়ণগঞ্জ সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহঃ (১) ফতুল্লা (২) এনায়েতনগর (৩) বক্তাবলী (৪) কাশিপুর (৫) কুতুবপুর (৬) গোগনগর ও (৭) আলীরটেক",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "নারায়ণগঞ্জ সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "ফতুল্লা",
+      "এনায়েতনগর",
+      "বক্তাবলী",
+      "কাশিপুর",
+      "কুতুবপুর",
+      "গোগনগর",
+      "আলীরটেক"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 208,
+   "name_bn": "নারায়ণগঞ্জ-৫",
+   "district_bn": "নারায়ণগঞ্জ",
+   "text_bn": "(ক) নারায়ণগঞ্জ সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ১১ - ২৭ এবং (খ) বন্দর উপজেলা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "নারায়ণগঞ্জ",
+     "wards": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বন্দর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 209,
+   "name_bn": "রাজবাড়ী-১",
+   "district_bn": "রাজবাড়ী",
+   "text_bn": "(ক) রাজবাড়ী সদর উপজেলা এবং (খ) গোয়ালন্দ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাজবাড়ী সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোয়ালন্দ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 210,
+   "name_bn": "রাজবাড়ী-২",
+   "district_bn": "রাজবাড়ী",
+   "text_bn": "(ক) পাংশা উপজেলা (খ) কালুখালী উপজেলা এবং (গ) বালিয়াকান্দি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পাংশা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালুখালী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বালিয়াকান্দি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 211,
+   "name_bn": "ফরিদপুর-১",
+   "district_bn": "ফরিদপুর",
+   "text_bn": "(ক) মধুখালী উপজেলা (খ) বোয়ালমারী উপজেলা এবং (গ) আলফাডাঙ্গা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মধুখালী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বোয়ালমারী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আলফাডাঙ্গা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 212,
+   "name_bn": "ফরিদপুর-২",
+   "district_bn": "ফরিদপুর",
+   "text_bn": "(ক) নগরকান্দা উপজেলা এবং (খ) সালথা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নগরকান্দা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সালথা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 921, 24 Dec 2025 (amends No. 875)"
+  },
+  {
+   "seat": 213,
+   "name_bn": "ফরিদপুর-৩",
+   "district_bn": "ফরিদপুর",
+   "text_bn": "ফরিদপুর সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফরিদপুর সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 214,
+   "name_bn": "ফরিদপুর-৪",
+   "district_bn": "ফরিদপুর",
+   "text_bn": "(ক) ভাঙ্গা উপজেলা (খ) চরভদ্রাসন উপজেলা এবং (গ) সদরপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ভাঙ্গা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "চরভদ্রাসন",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সদরপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 921, 24 Dec 2025 (amends No. 875)"
+  },
+  {
+   "seat": 215,
+   "name_bn": "গোপালগঞ্জ-১",
+   "district_bn": "গোপালগঞ্জ",
+   "text_bn": "(ক) মুকসুদপুর উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত কাশিয়ানী উপজেলা :- (১) সিংগা (২) হাতাইরা (৩) পুইশুর (৪) বেথুড়ী (৫) নিজামকান্দি (৬) ওড়াকান্দি ও (৭) পুকরা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুকসুদপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কাশিয়ানী",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত: (১) সিংগা (২) হাতাইরা (৩) পুইশুর (৪) বেথুড়ী (৫) নিজামকান্দি (৬) ওড়াকান্দি ও (৭) পুকরা ইউনিয়ন",
+     "except_unions_bn": [
+      "সিংগা",
+      "হাতাইরা",
+      "পুইশুর",
+      "বেথুড়ী",
+      "নিজামকান্দি",
+      "ওড়াকান্দি",
+      "পুকরা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 216,
+   "name_bn": "গোপালগঞ্জ-২",
+   "district_bn": "গোপালগঞ্জ",
+   "text_bn": "(ক) গোপালগঞ্জ সদর উপজেলা এবং (খ) কাশিয়ানী উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) সিংগা (২) হাতাইরা (৩) পুইশুর (৪) বেথুড়ী (৫) নিজামকান্দি (৬) ওড়াকান্দি ও (৭) পুকরা ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোপালগঞ্জ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "কাশিয়ানী",
+     "mode": "listed",
+     "unions_bn": [
+      "সিংগা",
+      "হাতাইরা",
+      "পুইশুর",
+      "বেথুড়ী",
+      "নিজামকান্দি",
+      "ওড়াকান্দি",
+      "পুকরা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 217,
+   "name_bn": "গোপালগঞ্জ-৩",
+   "district_bn": "গোপালগঞ্জ",
+   "text_bn": "(ক) টুঙ্গিপাড়া উপজেলা এবং (খ) কোটালীপাড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "টুঙ্গিপাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কোটালীপাড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 218,
+   "name_bn": "মাদারীপুর-১",
+   "district_bn": "মাদারীপুর",
+   "text_bn": "শিবচর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শিবচর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 219,
+   "name_bn": "মাদারীপুর-২",
+   "district_bn": "মাদারীপুর",
+   "text_bn": "(ক) রাজৈর উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত মাদারীপুর সদর উপজেলা:- (১) খোয়াজপুর (২) ঝাউদি (৩) ঘটমাঝি (৪) মোস্তফাপুর ও (৫) কেন্দুয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাজৈর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "মাদারীপুর সদর",
+     "mode": "except",
+     "unions_bn": [
+      "খোয়াজপুর",
+      "ঝাউদি",
+      "ঘটমাঝি",
+      "মোস্তফাপুর",
+      "কেন্দুয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 220,
+   "name_bn": "মাদারীপুর-৩",
+   "district_bn": "মাদারীপুর",
+   "text_bn": "(ক) কালকিনি উপজেলা (খ) ডাসার উপজেলা এবং (গ) মাদারীপুর সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) খোয়াজপুর (২) ঝাউদি (৩) ঘটমাঝি (৪) মোস্তফাপুর ও (৫) কেন্দুয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কালকিনি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ডাসার",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "মাদারীপুর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "খোয়াজপুর",
+      "ঝাউদি",
+      "ঘটমাঝি",
+      "মোস্তফাপুর",
+      "কেন্দুয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 221,
+   "name_bn": "শরীয়তপুর-১",
+   "district_bn": "শরীয়তপুর",
+   "text_bn": "(ক) শরীয়তপুর সদর উপজেলা এবং (খ) জাজিরা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শরীয়তপুর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জাজিরা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 222,
+   "name_bn": "শরীয়তপুর-২",
+   "district_bn": "শরীয়তপুর",
+   "text_bn": "(ক) নড়িয়া উপজেলা এবং (খ) ভেদরগঞ্জ উপজেলার ইউনিয়নসমূহ [সখিপুর থানা: (১) আর্শিনগর, (২) কাচিকাটা, (৩) চরকুমারিয়া, (৪) চরভাগা, (৫) চরসেনছাস, (৬) উত্তর তারাবুনিয়া, (৭) দক্ষিণ তারাবুনিয়া, (৮) ডি এম খালি ও (৯) সখিপুর ইউনিয়ন।]",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নড়িয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "ভেদরগঞ্জ",
+     "mode": "listed",
+     "unions_bn": [
+      "আর্শিনগর",
+      "কাচিকাটা",
+      "চরকুমারিয়া",
+      "চরভাগা",
+      "চরসেনছাস",
+      "উত্তর তারাবুনিয়া",
+      "দক্ষিণ তারাবুনিয়া",
+      "ডি এম খালি",
+      "সখিপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 223,
+   "name_bn": "শরীয়তপুর-৩",
+   "district_bn": "শরীয়তপুর",
+   "text_bn": "(ক) ডামুড্যা উপজেলা (খ) গোসাইরহাট উপজেলা (গ) ভেদরগঞ্জ উপজেলার নিম্নলিখিত ইউনিয়নসমূহ :- (১) ছয়গাঁও, (২) নারায়ণপুর, (৩) মহিষার ও (৪) রামভদ্রপুর ইউনিয়ন এবং (ঘ) ভেদরগঞ্জ পৌরসভা।",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ডামুড্যা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোসাইরহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "ভেদরগঞ্জ",
+     "mode": "listed",
+     "unions_bn": [
+      "ছয়গাঁও",
+      "নারায়ণপুর",
+      "মহিষার",
+      "রামভদ্রপুর"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "ভেদরগঞ্জ"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 224,
+   "name_bn": "সুনামগঞ্জ-১",
+   "district_bn": "সুনামগঞ্জ",
+   "text_bn": "(ক) ধর্মপাশা উপজেলা (খ) মধ্যনগর উপজেলা (গ) তাহিরপুর উপজেলা এবং (ঘ) জামালগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ধর্মপাশা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মধ্যনগর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তাহিরপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জামালগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 225,
+   "name_bn": "সুনামগঞ্জ-২",
+   "district_bn": "সুনামগঞ্জ",
+   "text_bn": "(ক) দিরাই উপজেলা এবং (খ) শাল্লা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দিরাই",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শাল্লা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 226,
+   "name_bn": "সুনামগঞ্জ-৩",
+   "district_bn": "সুনামগঞ্জ",
+   "text_bn": "(ক) জগন্নাথপুর উপজেলা এবং (খ) শান্তিগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "জগন্নাথপুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শান্তিগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 227,
+   "name_bn": "সুনামগঞ্জ-৪",
+   "district_bn": "সুনামগঞ্জ",
+   "text_bn": "(ক) সুনামগঞ্জ সদর উপজেলা এবং (খ) বিশ্বম্ভরপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সুনামগঞ্জ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বিশ্বম্ভরপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 228,
+   "name_bn": "সুনামগঞ্জ-৫",
+   "district_bn": "সুনামগঞ্জ",
+   "text_bn": "(ক) ছাতক উপজেলা এবং (খ) দোয়ারাবাজার উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ছাতক",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দোয়ারাবাজার",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 229,
+   "name_bn": "সিলেট-১",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) সিলেট সিটি কর্পোরেশনের ওয়ার্ড নম্বর-১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯, ১০, ১১, ১২, ১৩, ১৪, ১৫, ১৬, ১৭, ১৮, ১৯, ২০, ২১, ২২, ২৩, ২৪, ২৫, ২৬, ২৭, ৩১, ৩২, ৩৩, ৩৪, ৩৫, ৩৬, ৩৭, ৩৮ ও ৩৯ এবং (খ) সিলেট সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "সিলেট",
+     "wards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সিলেট সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 230,
+   "name_bn": "সিলেট-২",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) বিশ্বনাথ উপজেলা এবং (খ) ওসমানী নগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বিশ্বনাথ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ওসমানী নগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 231,
+   "name_bn": "সিলেট-৩",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) সিলেট সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ২৮,২৯,৩০,৪০,৪১ ও ৪২ (খ) দক্ষিণ সুরমা উপজেলা (গ) ফেঞ্চুগঞ্জ উপজেলা এবং (ঘ) বালাগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "সিলেট",
+     "wards": [
+      28,
+      29,
+      30,
+      40,
+      41,
+      42
+     ]
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দক্ষিণ সুরমা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফেঞ্চুগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বালাগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 232,
+   "name_bn": "সিলেট-৪",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) কোম্পানীগঞ্জ উপজেলা (খ) গোয়াইনঘাট উপজেলা এবং (গ) জৈন্তাপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কোম্পানীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোয়াইনঘাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জৈন্তাপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 233,
+   "name_bn": "সিলেট-৫",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) কানাইঘাট উপজেলা এবং (খ) জকিগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কানাইঘাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জকিগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 234,
+   "name_bn": "সিলেট-৬",
+   "district_bn": "সিলেট",
+   "text_bn": "(ক) বিয়ানীবাজার উপজেলা এবং (খ) গোলাপগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বিয়ানীবাজার",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "গোলাপগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 235,
+   "name_bn": "মৌলভীবাজার-১",
+   "district_bn": "মৌলভীবাজার",
+   "text_bn": "(ক) বড়লেখা উপজেলা এবং (খ) জুড়ী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বড়লেখা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "জুড়ী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 236,
+   "name_bn": "মৌলভীবাজার-২",
+   "district_bn": "মৌলভীবাজার",
+   "text_bn": "কুলাউড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুলাউড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 237,
+   "name_bn": "মৌলভীবাজার-৩",
+   "district_bn": "মৌলভীবাজার",
+   "text_bn": "(ক) মৌলভীবাজার সদর উপজেলা এবং (খ) রাজনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মৌলভীবাজার সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাজনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 238,
+   "name_bn": "মৌলভীবাজার-৪",
+   "district_bn": "মৌলভীবাজার",
+   "text_bn": "(ক) শ্রীমংগল উপজেলা এবং (খ) কমলগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "শ্রীমংগল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কমলগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 239,
+   "name_bn": "হবিগঞ্জ-১",
+   "district_bn": "হবিগঞ্জ",
+   "text_bn": "(ক) নবীগঞ্জ উপজেলা এবং (খ) বাহুবল উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নবীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাহুবল",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 240,
+   "name_bn": "হবিগঞ্জ-২",
+   "district_bn": "হবিগঞ্জ",
+   "text_bn": "(ক) আজমিরীগঞ্জ উপজেলা এবং (খ) বানিয়াচং উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আজমিরীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বানিয়াচং",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 241,
+   "name_bn": "হবিগঞ্জ-৩",
+   "district_bn": "হবিগঞ্জ",
+   "text_bn": "(ক) হবিগঞ্জ সদর উপজেলা (খ) লাখাই উপজেলা এবং (গ) শায়েস্তাগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হবিগঞ্জ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "লাখাই",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শায়েস্তাগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 242,
+   "name_bn": "হবিগঞ্জ-৪",
+   "district_bn": "হবিগঞ্জ",
+   "text_bn": "(ক) চুনারুঘাট উপজেলা এবং (খ) মাধবপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চুনারুঘাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মাধবপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 243,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-১",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "নাসিরনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাসিরনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 244,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-২",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "(ক) সরাইল উপজেলা (খ) আশুগঞ্জ উপজেলা এবং (গ) বিজয়নগর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) বুধন্তি ইউনিয়ন ও (২) চান্দুরা ইউনিয়ন।",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সরাইল",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "আশুগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "বিজয়নগর",
+     "mode": "listed",
+     "unions_bn": [
+      "বুধন্তি",
+      "চান্দুরা"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 245,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-৩",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "(ক) ব্রাহ্মণবাড়িয়া সদর উপজেলা এবং (খ) বিজয়নগর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) ইছাপুরা (২) চম্পকনগর (৩) পত্তন (৪) দক্ষিণ সিংগারবিল (৫) বিষ্ণুপুর (৬) চর ইসলামপুর (৭) পাহাড়পুর ইউনিয়ন ও (৮) হরষপুর ইউনিয়ন।",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ব্রাহ্মণবাড়িয়া সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "বিজয়নগর",
+     "mode": "listed",
+     "unions_bn": [
+      "ইছাপুরা",
+      "চম্পকনগর",
+      "পত্তন",
+      "দক্ষিণ সিংগারবিল",
+      "বিষ্ণুপুর",
+      "চর ইসলামপুর",
+      "পাহাড়পুর",
+      "হরষপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 246,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-৪",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "(ক) আখাউড়া উপজেলা এবং (খ) কসবা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আখাউড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কসবা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 247,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-৫",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "নবীনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নবীনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 248,
+   "name_bn": "ব্রাহ্মণবাড়িয়া-৬",
+   "district_bn": "ব্রাহ্মণবাড়িয়া",
+   "text_bn": "বাঞ্ছারামপুর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাঞ্ছারামপুর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 249,
+   "name_bn": "কুমিল্লা-১",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) দাউদকান্দি উপজেলা এবং (খ) মেঘনা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দাউদকান্দি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মেঘনা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 250,
+   "name_bn": "কুমিল্লা-২",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) হোমনা উপজেলা ও (খ) তিতাস উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হোমনা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "তিতাস",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 251,
+   "name_bn": "কুমিল্লা-৩",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "মুরাদনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মুরাদনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 252,
+   "name_bn": "কুমিল্লা-৪",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "দেবিদ্বার উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "দেবিদ্বার",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 253,
+   "name_bn": "কুমিল্লা-৫",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) ব্রাহ্মণপাড়া উপজেলা এবং (খ) বুড়িচং উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ব্রাহ্মণপাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "বুড়িচং",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 254,
+   "name_bn": "কুমিল্লা-৬",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) কুমিল্লা আদর্শ সদর উপজেলা (খ) কুমিল্লা সিটি কর্পোরেশন (গ) কুমিল্লা সেনানিবাস এলাকা এবং (ঘ) কুমিল্লা সদর দক্ষিণ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুমিল্লা আদর্শ সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "other",
+     "text_bn": "কুমিল্লা সিটি কর্পোরেশন"
+    },
+    {
+     "kind": "other",
+     "text_bn": "কুমিল্লা সেনানিবাস এলাকা"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুমিল্লা সদর দক্ষিণ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 255,
+   "name_bn": "কুমিল্লা-৭",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "চান্দিনা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চান্দিনা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 256,
+   "name_bn": "কুমিল্লা-৮",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "বরুড়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বরুড়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 257,
+   "name_bn": "কুমিল্লা-৯",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) মনোহরগঞ্জ উপজেলা এবং (খ) লাকসাম উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মনোহরগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "লাকসাম",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 258,
+   "name_bn": "কুমিল্লা-১০",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "(ক) নাংগলকোট উপজেলা এবং (খ) লালমাই উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "নাংগলকোট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "লালমাই",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 259,
+   "name_bn": "কুমিল্লা-১১",
+   "district_bn": "কুমিল্লা",
+   "text_bn": "চৌদ্দগ্রাম উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চৌদ্দগ্রাম",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 260,
+   "name_bn": "চাঁদপুর-১",
+   "district_bn": "চাঁদপুর",
+   "text_bn": "কচুয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কচুয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 261,
+   "name_bn": "চাঁদপুর-২",
+   "district_bn": "চাঁদপুর",
+   "text_bn": "(ক) মতলব (উত্তর) উপজেলা এবং (খ) মতলব (দক্ষিণ) উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মতলব (উত্তর)",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মতলব (দক্ষিণ)",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 262,
+   "name_bn": "চাঁদপুর-৩",
+   "district_bn": "চাঁদপুর",
+   "text_bn": "(ক) চাঁদপুর সদর উপজেলা এবং (খ) হাইমচর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চাঁদপুর সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাইমচর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 263,
+   "name_bn": "চাঁদপুর-৪",
+   "district_bn": "চাঁদপুর",
+   "text_bn": "ফরিদগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফরিদগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 264,
+   "name_bn": "চাঁদপুর-৫",
+   "district_bn": "চাঁদপুর",
+   "text_bn": "(ক) হাজীগঞ্জ উপজেলা এবং (খ) শাহরাস্তি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাজীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "শাহরাস্তি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 265,
+   "name_bn": "ফেনী-১",
+   "district_bn": "ফেনী",
+   "text_bn": "(ক) পরশুরাম উপজেলা (খ) ছাগলনাইয়া উপজেলা এবং (গ) ফুলগাজী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পরশুরাম",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ছাগলনাইয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফুলগাজী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 266,
+   "name_bn": "ফেনী-২",
+   "district_bn": "ফেনী",
+   "text_bn": "ফেনী সদর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফেনী সদর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 267,
+   "name_bn": "ফেনী-৩",
+   "district_bn": "ফেনী",
+   "text_bn": "(ক) সোনাগাজী উপজেলা এবং (খ) দাগনভূঞা উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সোনাগাজী",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "দাগনভূঞা",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 268,
+   "name_bn": "নোয়াখালী-১",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "(ক) চাটখিল উপজেলা এবং (খ) সোনাইমুড়ী উপজেলার নিম্নলিখিত ইউনিয়নসমূহ: (১) জয়াগ (২) নদনা (৩) চাষীরহাট (৪) বজরা (৫) সোনাপুর (৬) দেওটি ও (৭) আমিশাপাড়া ইউনিয়ন এবং (গ) সোনাইমুড়ী পৌরসভা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চাটখিল",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সোনাইমুড়ী",
+     "mode": "listed",
+     "unions_bn": [
+      "জয়াগ",
+      "নদনা",
+      "চাষীরহাট",
+      "বজরা",
+      "সোনাপুর",
+      "দেওটি",
+      "আমিশাপাড়া"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "সোনাইমুড়ী"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 269,
+   "name_bn": "নোয়াখালী-২",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "(ক) সেনবাগ উপজেলা এবং (খ) সোনাইমুড়ী উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) বারগাঁও (২) নাটেশ্বর ও (৩) অম্বর নগর ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সেনবাগ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সোনাইমুড়ী",
+     "mode": "listed",
+     "unions_bn": [
+      "বারগাঁও",
+      "নাটেশ্বর",
+      "অম্বর নগর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 270,
+   "name_bn": "নোয়াখালী-৩",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "বেগমগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বেগমগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 271,
+   "name_bn": "নোয়াখালী-৪",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "(ক) সুবর্ণচর উপজেলা এবং (খ) নোয়াখালী সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ:- (১) চরমটুয়া (২) দাদপুর (৩) নোয়ান্নই (৪) কাদিরহানিফ (৫) বিনোদপুর (৬) নোয়াখালী (৭) ধর্মপুর (৮) এওজবালিয়া (৯) কালাদরাপ (১০) পূর্ব চরমটুয়া ও (১১) আন্ডারচর ইউনিয়ন (গ) নোয়াখালী পৌরসভা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সুবর্ণচর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "নোয়াখালী সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "চরমটুয়া",
+      "দাদপুর",
+      "নোয়ান্নই",
+      "কাদিরহানিফ",
+      "বিনোদপুর",
+      "নোয়াখালী",
+      "ধর্মপুর",
+      "এওজবালিয়া",
+      "কালাদরাপ",
+      "পূর্ব চরমটুয়া",
+      "আন্ডারচর"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "নোয়াখালী"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 272,
+   "name_bn": "নোয়াখালী-৫",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "(ক) কবিরহাট উপজেলা (খ) কোম্পানীগঞ্জ উপজেলা এবং (গ) নোয়াখালী সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ: (১) অশ্বদিয়া ও (২) নেয়াজপুর ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কবিরহাট",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কোম্পানীগঞ্জ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "নোয়াখালী সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "অশ্বদিয়া",
+      "নেয়াজপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 273,
+   "name_bn": "নোয়াখালী-৬",
+   "district_bn": "নোয়াখালী",
+   "text_bn": "হাতিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাতিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 274,
+   "name_bn": "লক্ষ্মীপুর-১",
+   "district_bn": "লক্ষ্মীপুর",
+   "text_bn": "রামগঞ্জ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রামগঞ্জ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 275,
+   "name_bn": "লক্ষ্মীপুর-২",
+   "district_bn": "লক্ষ্মীপুর",
+   "text_bn": "(ক) রায়পুর উপজেলা এবং (খ) লক্ষ্মীপুর সদর উপজেলা নিম্নলিখিত ইউনিয়নসমূহ : (১) উত্তর হামছাদী, (২) দক্ষিণ হামছাদী, (৩) দালাল বাজার, (৪) চর রুহিতা, (৫) পার্বতী নগর, (৬) শাকচর (৭) টুমচর (৮) চর রমনীমোহন ও (৯) বশিকপুর",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রায়পুর",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "লক্ষ্মীপুর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "উত্তর হামছাদী",
+      "দক্ষিণ হামছাদী",
+      "দালাল বাজার",
+      "চর রুহিতা",
+      "পার্বতী নগর",
+      "শাকচর",
+      "টুমচর",
+      "চর রমনীমোহন",
+      "বশিকপুর"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 276,
+   "name_bn": "লক্ষ্মীপুর-৩",
+   "district_bn": "লক্ষ্মীপুর",
+   "text_bn": "(ক) লক্ষ্মীপুর সদর উপজেলার নিম্নলিখিত ইউনিয়নসমূহ : (১) ভাঙ্গা খাঁ (২) দত্তপাড়া (৩) উত্তর জয়পুর (৪) চন্দ্রগঞ্জ (৫) হাজির পাড়া (৬) চর শাহী (৭) দিঘলী (৮) মান্দারী (৯) লাহারকান্দি (১০) ভবানীগঞ্জ (১১) কুশাখালী ও (১২) তেওয়ারীগঞ্জ এবং (খ) লক্ষ্মীপুর সদর পৌরসভা",
+   "parts": [
+    {
+     "kind": "unions",
+     "upazila_bn": "লক্ষ্মীপুর সদর",
+     "mode": "listed",
+     "unions_bn": [
+      "ভাঙ্গা খাঁ",
+      "দত্তপাড়া",
+      "উত্তর জয়পুর",
+      "চন্দ্রগঞ্জ",
+      "হাজির পাড়া",
+      "চর শাহী",
+      "দিঘলী",
+      "মান্দারী",
+      "লাহারকান্দি",
+      "ভবানীগঞ্জ",
+      "কুশাখালী",
+      "তেওয়ারীগঞ্জ"
+     ]
+    },
+    {
+     "kind": "paurashava",
+     "name_bn": "লক্ষ্মীপুর সদর"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 277,
+   "name_bn": "লক্ষ্মীপুর-৪",
+   "district_bn": "লক্ষ্মীপুর",
+   "text_bn": "(ক) রামগতি উপজেলা এবং (খ) কমলনগর উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রামগতি",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কমলনগর",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 278,
+   "name_bn": "চট্টগ্রাম-১",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "মীরশ্বরাই উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "মীরশ্বরাই",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 279,
+   "name_bn": "চট্টগ্রাম-২",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "ফটিকছড়ি উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "ফটিকছড়ি",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 280,
+   "name_bn": "চট্টগ্রাম-৩",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "সন্দ্বীপ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সন্দ্বীপ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 281,
+   "name_bn": "চট্টগ্রাম-৪",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) সীতাকুন্ড উপজেলা এবং (খ) চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর-৯ ও ১০",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "সীতাকুন্ড",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      9,
+      10
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 282,
+   "name_bn": "চট্টগ্রাম-৫",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) হাটহাজারী উপজেলা এবং (খ) চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০১ ও ০২",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "হাটহাজারী",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      1,
+      2
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 283,
+   "name_bn": "চট্টগ্রাম-৬",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "রাউজান উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাউজান",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 284,
+   "name_bn": "চট্টগ্রাম-৭",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "রাঙ্গুনিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "রাঙ্গুনিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 285,
+   "name_bn": "চট্টগ্রাম-৮",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) বোয়ালখালী উপজেলা এবং (খ) চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর- ০৩, ০৪, ০৫, ০৬ ও ০৭",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বোয়ালখালী",
+     "mode": "whole"
+    },
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 286,
+   "name_bn": "চট্টগ্রাম-৯",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর-১৫, ১৬, ১৭, ১৮, ১৯, ২০, ২১, ২২, ২৩, ৩১, ৩২, ৩৩, ৩৪ ও ৩৫",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 287,
+   "name_bn": "চট্টগ্রাম-১০",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর-০৮, ১১, ১২, ১৩, ১৪, ২৪, ২৫ ও ২৬",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      24,
+      25,
+      26
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 288,
+   "name_bn": "চট্টগ্রাম-১১",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "চট্টগ্রাম সিটি কর্পোরেশনের ওয়ার্ড নম্বর-২৭, ২৮, ২৯, ৩০, ৩৬, ৩৭, ৩৮, ৩৯, ৪০ ও ৪১",
+   "parts": [
+    {
+     "kind": "city_wards",
+     "city_bn": "চট্টগ্রাম",
+     "wards": [
+      27,
+      28,
+      29,
+      30,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 289,
+   "name_bn": "চট্টগ্রাম-১২",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "পটিয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "পটিয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 290,
+   "name_bn": "চট্টগ্রাম-১৩",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) আনোয়ারা উপজেলা এবং (খ) কর্ণফুলী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "আনোয়ারা",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "কর্ণফুলী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 291,
+   "name_bn": "চট্টগ্রাম-১৪",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) চন্দনাইশ উপজেলা এবং (খ) সাতকানিয়া উপজেলার নিম্নলিখিত ইউনিয়নসমূহ:- (১) কেওচিয়া (২) কালিয়াইশ (৩) বাজালিয়া (৪) ধর্মপুর (৫) পুরানগড় ও (৬) খাগরিয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চন্দনাইশ",
+     "mode": "whole"
+    },
+    {
+     "kind": "unions",
+     "upazila_bn": "সাতকানিয়া",
+     "mode": "listed",
+     "unions_bn": [
+      "কেওচিয়া",
+      "কালিয়াইশ",
+      "বাজালিয়া",
+      "ধর্মপুর",
+      "পুরানগড়",
+      "খাগরিয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 292,
+   "name_bn": "চট্টগ্রাম-১৫",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "(ক) লোহাগাড়া উপজেলা এবং (খ) নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত সাতকানিয়া উপজেলা:- (১) কেওচিয়া (২) কালিয়াইশ (৩) বাজালিয়া (৪) ধর্মপুর (৫) পুরানগড় ও (৬) খাগরিয়া ইউনিয়ন",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "লোহাগাড়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "সাতকানিয়া",
+     "mode": "whole_except",
+     "except_text_bn": "নিম্নলিখিত ইউনিয়নসমূহ ব্যতীত: (১) কেওচিয়া (২) কালিয়াইশ (৩) বাজালিয়া (৪) ধর্মপুর (৫) পুরানগড় ও (৬) খাগরিয়া ইউনিয়ন",
+     "except_unions_bn": [
+      "কেওচিয়া",
+      "কালিয়াইশ",
+      "বাজালিয়া",
+      "ধর্মপুর",
+      "পুরানগড়",
+      "খাগরিয়া"
+     ]
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 293,
+   "name_bn": "চট্টগ্রাম-১৬",
+   "district_bn": "চট্টগ্রাম",
+   "text_bn": "বাঁশখালী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "বাঁশখালী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 294,
+   "name_bn": "কক্সবাজার-১",
+   "district_bn": "কক্সবাজার",
+   "text_bn": "(ক) চকরিয়া উপজেলা এবং (খ) পেকুয়া উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "চকরিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "পেকুয়া",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 295,
+   "name_bn": "কক্সবাজার-২",
+   "district_bn": "কক্সবাজার",
+   "text_bn": "(ক) কুতুবদিয়া উপজেলা এবং (খ) মহেশখালী উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কুতুবদিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "মহেশখালী",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 296,
+   "name_bn": "কক্সবাজার-৩",
+   "district_bn": "কক্সবাজার",
+   "text_bn": "(ক) কক্সবাজার সদর উপজেলা (খ) ঈদগাঁও উপজেলা এবং (গ) রামু উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "কক্সবাজার সদর",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "ঈদগাঁও",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "রামু",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 297,
+   "name_bn": "কক্সবাজার-৪",
+   "district_bn": "কক্সবাজার",
+   "text_bn": "(ক) উখিয়া উপজেলা এবং (খ) টেকনাফ উপজেলা",
+   "parts": [
+    {
+     "kind": "upazila",
+     "upazila_bn": "উখিয়া",
+     "mode": "whole"
+    },
+    {
+     "kind": "upazila",
+     "upazila_bn": "টেকনাফ",
+     "mode": "whole"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 298,
+   "name_bn": "খাগড়াছড়ি",
+   "district_bn": "খাগড়াছড়ি",
+   "text_bn": "খাগড়াছড়ি পার্বত্য জেলা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "খাগড়াছড়ি পার্বত্য জেলা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 299,
+   "name_bn": "রাঙ্গামাটি",
+   "district_bn": "রাঙ্গামাটি",
+   "text_bn": "রাঙ্গামাটি পার্বত্য জেলা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "রাঙ্গামাটি পার্বত্য জেলা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  },
+  {
+   "seat": 300,
+   "name_bn": "বান্দরবান",
+   "district_bn": "বান্দরবান",
+   "text_bn": "বান্দরবান পার্বত্য জেলা",
+   "parts": [
+    {
+     "kind": "other",
+     "text_bn": "বান্দরবান পার্বত্য জেলা"
+    }
+   ],
+   "gazette": "No. 875, 11 Dec 2025"
+  }
+ ]
+}

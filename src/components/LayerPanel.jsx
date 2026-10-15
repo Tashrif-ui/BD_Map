@@ -45,7 +45,7 @@ export default function LayerPanel({ data, extra, layers, open, onToggleLayer, o
             [data?.upazilas.filter((u) => u.type === 'upazila').length, 's_upz2'],
             [data?.upazilas.filter((u) => u.type === 'city_corporation').length, 's_city'],
             [extra.unions?.filter((u) => u.type === 'union').length, 's_union'],
-            [300, 's_seat'],
+            [data?.seats.length, 's_seat'],
           ].map(([n, key]) => (
             <div key={key} className="stat">
               <b>{n == null ? '—' : num(n)}</b>

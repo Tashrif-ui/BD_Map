@@ -312,3 +312,10 @@ button { font: inherit; color: inherit; }
 .result .sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%; }
 .crumbs > span { color: inherit; }
 .crumbs > span:last-child { color: var(--muted); }
+.gazette { background: var(--surface-2); border-radius: 10px; padding: 10px 12px; font-size: 14px; line-height: 1.7; margin: 0; }
+.quality { font-weight: 600; }
+.quality.q-complete { color: var(--brand); }
+.quality.q-partial { color: #c27c0e; }
+.quality.q-none { color: var(--red); }
+.note ul { margin: 6px 0 0; padding-left: 18px; }
+.lbl-seat { font-size: 11px; font-weight: 700; color: var(--text); font-family: Inter, var(--font); }

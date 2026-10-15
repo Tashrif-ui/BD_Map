@@ -16,7 +16,7 @@ function Row({ label, children, pending }) {
   );
 }
 
-function Sources({ data, local }) {
+function Sources({ data, local, seat }) {
   const { t, num } = useLanguage();
   return (
     <div className="source">
@@ -30,6 +30,12 @@ function Sources({ data, local }) {
       )}
       {t('sourceNames')}
       <br />
+      {seat && (
+        <>
+          {t('sourceSeat')}
+          <br />
+        </>
+      )}
       {t('verified')}: {num(data.lastVerified)}
     </div>
   );
@@ -46,7 +52,8 @@ function Kind({ color, children }) {
 
 function Chips({ items, type, onSelect }) {
   const { name, lang } = useLanguage();
-  const sorted = [...items].sort((a, b) => name(a).localeCompare(name(b), lang));
+  // Seats in gazette order, places alphabetically.
+  const sorted = [...items].sort((a, b) => (type === 'seat' ? a.seat - b.seat : name(a).localeCompare(name(b), lang)));
   return (
     <div className="chips">
       {sorted.map((p) => (
@@ -96,7 +103,7 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
             </button>
           ))}
         </div>
-        <Sources data={data} />
+        <Sources data={data} seat />
       </div>
     );
   } else if (data && selected && !place) {
@@ -106,11 +113,14 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
     const divisionId = divisionOf(data, extra, selected);
     const color =
       selected.type === 'district' ? 'var(--red)' : DIVISION_COLORS[selected.type === 'division' ? place.id : divisionId];
-    const seatsPending = (
-      <Row label={t('constituencies')} pending>
-        {t('pending', { p: 5 })}
-      </Row>
-    );
+    const seatCount = (list) => <Row label={t('constituencies')}>{num(list.length)}</Row>;
+    const seatChips = (list) =>
+      list.length > 0 && (
+        <>
+          <h3>{t(selected.type === 'district' ? 'seatsIn' : 'seatsOf')}</h3>
+          <Chips items={list} type="seat" onSelect={onSelect} />
+        </>
+      );
     const link = (type, p) => (
       <button type="button" className="link" onClick={() => onSelect(type, p.id)}>
         {name(p)}
@@ -125,7 +135,7 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
         <>
           <Row label={t('districts')}>{num(districts.length)}</Row>
           <Row label={t('upazilas')}>{num(data.upazilas.filter((u) => u.division_id === place.id).length)}</Row>
-          {seatsPending}
+          {seatCount(data.seats.filter((x) => x.division_id === place.id))}
         </>
       );
       lists = (
@@ -140,11 +150,12 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
         <>
           <Row label={t('division')}>{link('division', data.divisionById[place.division_id])}</Row>
           <Row label={t('upazilas')}>{num(upazilas.length)}</Row>
-          {seatsPending}
+          {seatCount(data.seatsByDistrict[place.id] ?? [])}
         </>
       );
       lists = (
         <>
+          {seatChips(data.seatsByDistrict[place.id] ?? [])}
           <h3>{t('upazilasIn')}</h3>
           <Chips items={upazilas} type="upazila" onSelect={onSelect} />
         </>
@@ -158,11 +169,12 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
           <Row label={t('division')}>{link('division', data.divisionById[place.division_id])}</Row>
           <Row label={t('unionsIn')}>{unions ? num(unions.length) : t('loadingShort')}</Row>
           <Row label={t('thanas')}>{thanas ? num(thanas.length) : t('loadingShort')}</Row>
-          {seatsPending}
+          {seatCount(data.seatsByUpazila[place.id] ?? [])}
         </>
       );
       lists = (
         <>
+          {seatChips(data.seatsByUpazila[place.id] ?? [])}
           {unions?.length > 0 && (
             <>
               <h3>{t('unionsIn')}</h3>
@@ -177,6 +189,39 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
           )}
         </>
       );
+    } else if (selected.type === 'seat') {
+      const upazilas = place.upazila_ids.map((id) => data.upazilaById[id]);
+      rows = (
+        <>
+          <Row label={t('constituency')}>{t('seatNo', { n: place.seat })}</Row>
+          <Row label={t('district')}>{link('district', data.districtById[place.district_id])}</Row>
+          <Row label={t('division')}>{link('division', data.divisionById[place.division_id])}</Row>
+          <Row label={t('boundary')}>
+            <span className={`quality q-${place.boundary_quality}`}>{t(`q_${place.boundary_quality}`)}</span>
+          </Row>
+        </>
+      );
+      lists = (
+        <>
+          <h3>{t('gazetteText')}</h3>
+          <p className="gazette" lang="bn">
+            {place.text_bn}
+          </p>
+          {place.unmatched.length > 0 && (
+            <div className="note">
+              {t(`qNote_${place.boundary_quality === 'none' ? 'none' : 'partial'}`)}
+              <ul lang="bn">
+                {place.unmatched.map((u) => (
+                  <li key={u}>{u}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <h3>{t('upazilas')}</h3>
+          <Chips items={upazilas} type="upazila" onSelect={onSelect} />
+          <p className="note">{t('seatSplitNote')}</p>
+        </>
+      );
     } else {
       // thana or union
       const upz = data.upazilaById[place.upazila_id];
@@ -186,10 +231,14 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
           <Row label={t(kindKey('upazila', upz))}>{link('upazila', upz)}</Row>
           <Row label={t('district')}>{link('district', data.districtById[upz.district_id])}</Row>
           <Row label={t('division')}>{link('division', data.divisionById[upz.division_id])}</Row>
-          {selected.type === 'union' && seatsPending}
         </>
       );
-      lists = selected.type === 'thana' ? <p className="note">{t('thanaNote')}</p> : null;
+      lists = (
+        <>
+          {seatChips(data.seatsByUpazila[upz.id] ?? [])}
+          {selected.type === 'thana' && <p className="note">{t('thanaNote')}</p>}
+        </>
+      );
     }
 
     body = (
@@ -199,7 +248,7 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
             {t('bangladesh')}
           </button>
           {parents.map((p) => (
-            <span key={p.id}>
+            <span key={`${p.type}-${p.id}`}>
               {' › '}
               <button type="button" onClick={() => onSelect(p.type, p.id)}>
                 {name(p.place)}
@@ -216,7 +265,11 @@ const DetailsPanel = forwardRef(function DetailsPanel({ data, extra, selected, o
         <div className="detail-sub">{altName(place) || (place.name_bn ? '' : t('noBangla'))}</div>
         <div className="rows">{rows}</div>
         {lists}
-        <Sources data={data} local={selected.type === 'thana' || selected.type === 'union' || selected.type === 'upazila'} />
+        <Sources
+          data={data}
+          local={selected.type === 'thana' || selected.type === 'union' || selected.type === 'upazila'}
+          seat
+        />
       </>
     );
   }

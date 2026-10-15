@@ -45,10 +45,14 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress / partial
 - [ ] Newer thanas/unions created after 2015 (needs newer boundary data)
 
 ## Phase 5 — Parliamentary constituencies
-- [ ] Latest Election Commission gazette for the 300 seats
-- [ ] Seat numbers + names (Bangla + English), district & upazila links
-- [ ] Verified constituency boundaries (kept separate from admin boundaries)
-- [ ] Seat-number labels on the map + details panel
+- [x] Election Commission gazette No. 875 (11 Dec 2025) transcribed seat by seat (`data/constituencies/gazette.json`), amendments No. 921 (Faridpur-2, Faridpur-4) and No. 66 (Pabna-1, Pabna-2 restored) applied
+- [x] All 300 seats with Bangla + English names, district, upazilas, verbatim gazette text
+- [x] Boundaries built from upazilas (2023) + unions/paurashavas/wards (2015): 267 complete, 18 partial, 15 not drawable — every gap listed per seat, nothing guessed
+- [x] Constituency layer with seat-number labels (partial seats dashed), details panel, seat lists on district/upazila/union panels, search by name or number
+- [x] Validation: 300 seats, every upazila in at least one seat, shapes match records
+- [ ] Boundaries for seats made of current city-corporation wards (Dhaka North/South, Gazipur, Narayanganj, Rangpur, new Sylhet wards) — needs current ward boundary data
+- [ ] Cantonment / airport areas, and unions created after 2015
+- [ ] Historical boundaries (earlier delimitations)
 
 ## Phase 6 — Search, filters, polish
 - [ ] Search across all levels (division → union, constituencies)

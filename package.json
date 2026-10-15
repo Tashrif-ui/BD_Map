@@ -11,7 +11,7 @@
     "build": "npm run validate && vite build",
     "preview": "vite preview",
     "data:fetch": "node scripts/fetch-data.mjs",
-    "data:build": "node scripts/build-data.mjs",
+    "data:build": "node scripts/build-data.mjs && node scripts/build-constituencies.mjs",
     "validate": "node scripts/validate-data.js"
   },
   "dependencies": {

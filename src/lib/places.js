@@ -16,6 +16,8 @@ export function getPlace(data, extra, sel) {
       return extra.thanaById?.[sel.id] ?? null;
     case 'union':
       return extra.unionById?.[sel.id] ?? null;
+    case 'seat':
+      return data.seatById[sel.id] ?? null;
     default:
       return null;
   }
@@ -29,7 +31,7 @@ export function getParents(data, extra, sel) {
   let upazila = null;
   if (sel.type === 'thana' || sel.type === 'union') upazila = data.upazilaById[place.upazila_id];
   if (sel.type === 'upazila') upazila = place;
-  const districtId = sel.type === 'district' ? place.id : upazila?.district_id;
+  const districtId = sel.type === 'district' ? place.id : sel.type === 'seat' ? place.district_id : upazila?.district_id;
   const district = districtId ? data.districtById[districtId] : null;
   const divisionId = sel.type === 'division' ? null : (district ?? place).division_id;
   if (divisionId) chain.push({ type: 'division', id: divisionId, place: data.divisionById[divisionId] });
@@ -48,5 +50,6 @@ export function divisionOf(data, extra, sel) {
 export function kindKey(type, place) {
   if (type === 'upazila') return place?.type === 'city_corporation' ? 'cityCorporation' : 'upazila';
   if (type === 'union') return place?.type ?? 'union';
+  if (type === 'seat') return 'constituency';
   return type;
 }
