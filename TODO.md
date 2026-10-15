@@ -55,10 +55,11 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress / partial
 - [ ] Historical boundaries (earlier delimitations)
 
 ## Phase 6 — Search, filters, polish
-- [ ] Search across all levels (division → union, constituencies)
-- [ ] Filters, URL sharing of the selected area
-- [ ] Image export with `BD-Map · Tashrif Alam` watermark
-- [ ] About page (author, how to credit, sources)
+- [x] Search across divisions, districts, upazilas, thanas, unions and constituencies (Bangla/English, seat number, Unicode-safe)
+- [x] Filtering by layer toggles and division legend; focus dimming around the selected area
+- [x] Shareable links (`#district/bogura`, `#seat/seat-186` …) + copy-link button
+- [x] Map image export with title and `BD-Map · © Tashrif Alam` watermark
+- [x] About dialog (author, how to credit, license, sources) from the footer
 
 ## Phase 7 — Validation, docs, launch
 - [ ] Full geographic accuracy check

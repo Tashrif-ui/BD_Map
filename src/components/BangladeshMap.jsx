@@ -103,7 +103,7 @@ function overlayStyle(kind, ctx, f) {
 }
 
 /* ---------- Component ---------- */
-export default function BangladeshMap({ data, extra, selected, flyKey, layers, isMobile, detailsRef, onSelect, onZoom }) {
+export default function BangladeshMap({ data, extra, selected, flyKey, layers, isMobile, detailsRef, mapRef, onSelect, onZoom }) {
   const { theme } = useTheme();
   const { lang, name, num } = useLanguage();
   const elRef = useRef(null);
@@ -337,6 +337,7 @@ export default function BangladeshMap({ data, extra, selected, flyKey, layers, i
     map.on('moveend', refreshUnions);
     ctx().onZoom?.(map.getZoom());
 
+    if (mapRef) mapRef.current = map;
     partsRef.current = {
       map,
       bounds,
@@ -370,6 +371,7 @@ export default function BangladeshMap({ data, extra, selected, flyKey, layers, i
       clearTimeout(timer);
       map.remove();
       partsRef.current = null;
+      if (mapRef) mapRef.current = null;
     };
   }, [data]);
 

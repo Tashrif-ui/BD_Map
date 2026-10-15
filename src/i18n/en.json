@@ -77,5 +77,20 @@
   "qNote_partial": "Boundary data is missing for some areas, so the map outline is partial (dashed):",
   "qNote_none": "Boundary data for these areas (e.g. current city corporation wards) is not available, so the seat is not drawn:",
   "sourceSeat": "Constituencies: Bangladesh Election Commission gazette No. 875 (11 Dec 2025), with amendments No. 921 and No. 66",
-  "seatSplitNote": "An upazila can be split between several constituencies."
+  "seatSplitNote": "An upazila can be split between several constituencies.",
+  "about": "About",
+  "aboutTitle": "About BD-Map",
+  "aboutIntro": "BD-Map is an open, bilingual, interactive map of Bangladesh — from divisions down to unions, and all 300 parliamentary constituencies. It is built for learning and knowledge, not for any commercial purpose.",
+  "aboutAuthor": "Author",
+  "aboutCreditTitle": "How to credit",
+  "aboutCreditText": "If you use any part of this project (non-commercially only), credit it like this:",
+  "aboutLicenseTitle": "License",
+  "aboutLicenseText": "Code, data curation and design: CC BY-NC-SA 4.0 — attribution required, no commercial use, share alike. Third-party data keeps its own license.",
+  "aboutSourcesTitle": "Data sources",
+  "aboutAccuracy": "Boundaries are simplified and not suitable for legal or survey use. Nothing is guessed — where data is missing, the map says so.",
+  "exportImage": "Save map as image",
+  "exporting": "Creating image…",
+  "exportFailed": "Could not create the image",
+  "linkCopied": "Link copied",
+  "copyLink": "Copy a link to this area"
 }
