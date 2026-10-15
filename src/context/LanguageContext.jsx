@@ -36,9 +36,10 @@ export function LanguageProvider({ children }) {
     },
     [lang, num],
   );
-  // A place's name in the active language, and in the other one.
-  const name = useCallback((p) => (lang === 'bn' ? p.name_bn : p.name_en), [lang]);
-  const altName = useCallback((p) => (lang === 'bn' ? p.name_en : p.name_bn), [lang]);
+  // A place's name in the active language, and in the other one. Some thanas and unions have no
+  // verified Bangla name yet (name_bn = null); they fall back to English rather than a guess.
+  const name = useCallback((p) => (lang === 'bn' ? p.name_bn || p.name_en : p.name_en), [lang]);
+  const altName = useCallback((p) => (lang === 'bn' ? (p.name_bn ? p.name_en : '') : p.name_bn || ''), [lang]);
 
   const value = useMemo(() => ({ lang, setLang, t, num, name, altName }), [lang, t, num, name, altName]);
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;

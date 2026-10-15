@@ -66,6 +66,41 @@ for (const dv of divisions) {
     fail(`division ${dv.id}: expected ${EXPECTED_DISTRICTS[dv.id]} districts, found ${children.length}`);
 }
 
+// Upazilas, thanas, unions
+const upazilas = parsed["upazilas.json"]?.data ?? [];
+const thanas = parsed["thanas.json"]?.data ?? [];
+const unions = parsed["unions.json"]?.data ?? [];
+const upzIds = new Set(upazilas.map((u) => u.id));
+if (upzIds.size !== upazilas.length) fail("duplicate upazila ids");
+const cities = upazilas.filter((u) => u.type === "city_corporation").length;
+if (cities !== 12) fail(`expected 12 city corporations, found ${cities}`);
+if (upazilas.length - cities < 490) fail(`only ${upazilas.length - cities} upazilas — expected about 495`);
+for (const u of upazilas) {
+  if (!u.name_en || !u.name_bn || !/[ঀ-৿]/.test(u.name_bn)) fail(`upazila ${u.id}: missing/invalid Bangla or English name`);
+  if (!distIds.has(u.district_id)) fail(`upazila ${u.id}: unknown district ${u.district_id}`);
+  const d = districts.find((x) => x.id === u.district_id);
+  if (d && d.division_id !== u.division_id) fail(`upazila ${u.id}: division does not match its district`);
+  if (!u.source || !u.last_verified) fail(`upazila ${u.id}: missing source or last_verified`);
+}
+for (const d of districts) {
+  const children = upazilas.filter((u) => u.district_id === d.id).map((u) => u.id).sort();
+  if (!children.length) fail(`district ${d.id}: has no upazilas`);
+  if (JSON.stringify(children) !== JSON.stringify([...(d.upazila_ids || [])].sort())) fail(`district ${d.id}: upazila_ids do not match upazilas.json`);
+}
+const checkChildren = (label, list) => {
+  const ids = new Set(list.map((x) => x.id));
+  if (ids.size !== list.length) fail(`duplicate ${label} ids`);
+  for (const x of list) {
+    if (!x.name_en) fail(`${label} ${x.id}: missing English name`);
+    if (x.name_bn != null && !/[ঀ-৿]/.test(x.name_bn)) fail(`${label} ${x.id}: name_bn is not Bangla script`);
+    if (!upzIds.has(x.upazila_id)) fail(`${label} ${x.id}: unknown upazila ${x.upazila_id}`);
+  }
+};
+checkChildren("thana", thanas);
+checkChildren("union", unions);
+if (thanas.length < 500) fail(`only ${thanas.length} thanas`);
+if (unions.length < 4500) fail(`only ${unions.length} unions`);
+
 // 3. Boundaries: one feature per record, closed rings, coordinates inside Bangladesh
 function checkBoundaries(path, records) {
   const fc = parsed[path];
@@ -89,9 +124,26 @@ function checkBoundaries(path, records) {
 }
 checkBoundaries('boundaries/divisions.geojson', divisions);
 checkBoundaries('boundaries/districts.geojson', districts);
+checkBoundaries("boundaries/upazilas.geojson", upazilas);
+checkBoundaries("boundaries/thanas.geojson", thanas);
+// Unions are split per district; together they must cover every union exactly once.
+{
+  const all = [];
+  for (const d of districts) {
+    const path = `boundaries/unions/${d.id}.geojson`;
+    if (!parsed[path]) { fail(`${path}: missing`); continue; }
+    for (const f of parsed[path].features) {
+      all.push(f);
+      const u = unions.find((x) => x.id === f.properties.id);
+      if (u && upazilas.find((x) => x.id === u.upazila_id)?.district_id !== d.id) fail(`${path}: union ${u.id} belongs to another district`);
+    }
+  }
+  parsed["__unions"] = { features: all };
+  checkBoundaries("__unions", unions);
+}
 
 if (errors.length) {
   console.error(`✗ data validation failed (${errors.length}):\n  - ${errors.join('\n  - ')}`);
   process.exit(1);
 }
-console.log(`✓ data valid: ${divisions.length} divisions, ${districts.length} districts, ${Object.keys(parsed).length} files`);
+console.log(`✓ data valid: ${divisions.length} divisions, ${districts.length} districts, ${upazilas.length} upazilas (${cities} city corporations), ${thanas.length} thanas, ${unions.length} unions, ${Object.keys(parsed).length - 1} files`);

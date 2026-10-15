@@ -4,8 +4,9 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLanguage } from './context/LanguageContext.jsx';
-import { loadData } from './lib/data.js';
-import { DEFAULT_LAYERS } from './lib/layers.js';
+import { loadData, loadThanas, loadUnions } from './lib/data.js';
+import { DEFAULT_LAYERS, LAYER_FOR_TYPE, UNION_MIN_ZOOM } from './lib/layers.js';
+import { getPlace, kindKey } from './lib/places.js';
 import { MOBILE_QUERY, useMediaQuery } from './lib/useMediaQuery.js';
 import AppBar from './components/AppBar.jsx';
 import BangladeshMap from './components/BangladeshMap.jsx';
@@ -19,10 +20,12 @@ export default function App() {
   const detailsRef = useRef(null);
 
   const [data, setData] = useState(null);
+  const [extra, setExtra] = useState({}); // thana + union records, loaded on demand
   const [loadError, setLoadError] = useState(false);
-  const [selected, setSelected] = useState(null); // { type: 'division' | 'district', id }
+  const [selected, setSelected] = useState(null); // { type, id }
   const [flyKey, setFlyKey] = useState(null); // changes on every selection; { fly } = move the map
   const [layers, setLayers] = useState(DEFAULT_LAYERS);
+  const [zoom, setZoom] = useState(7);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [toast, setToast] = useState(null);
 
@@ -35,25 +38,34 @@ export default function App() {
       });
   }, []);
 
+  const needThanas = () => loadThanas().then((r) => setExtra((e) => (e.thanaById ? e : { ...e, ...r })));
+  const needUnions = () => loadUnions().then((r) => setExtra((e) => (e.unionById ? e : { ...e, ...r })));
+
+  // Load thana / union records when a layer, a selection or the details panel needs them.
+  useEffect(() => {
+    if (layers.thana || selected?.type === 'thana' || selected?.type === 'upazila') needThanas().catch(console.error);
+    if (layers.union || selected?.type === 'union' || selected?.type === 'upazila') needUnions().catch(console.error);
+  }, [layers.thana, layers.union, selected?.type]);
+
   // type = null clears the selection. fly = also move the map to it.
   const select = useCallback((type, id, fly = true) => {
     setSelected(type ? { type, id } : null);
     setFlyKey({ fly });
     setDrawerOpen(false);
-    if (type === 'district') setLayers((l) => (l.dist ? l : { ...l, dist: true }));
+    // Make sure the layer that shows the selected place is visible.
+    const layer = LAYER_FOR_TYPE[type];
+    if (layer && type !== 'division') setLayers((l) => (l[layer] ? l : { ...l, [layer]: true }));
   }, []);
 
   const toggleLayer = useCallback((id, on) => setLayers((l) => ({ ...l, [id]: on })), []);
 
   const toastTimer = useRef(null);
-  const showComingSoon = useCallback(
-    (phase) => {
-      setToast(t('comingToast', { p: phase }));
-      clearTimeout(toastTimer.current);
-      toastTimer.current = setTimeout(() => setToast(null), 2200);
-    },
-    [t],
-  );
+  const showToast = useCallback((text) => {
+    setToast(text);
+    clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToast(null), 2200);
+  }, []);
+  const showComingSoon = useCallback((phase) => showToast(t('comingToast', { p: phase })), [showToast, t]);
 
   useEffect(() => {
     if (!isMobile) setDrawerOpen(false);
@@ -66,15 +78,20 @@ export default function App() {
   }, []);
 
   let chip = t('chipIdle');
-  if (data && selected) {
-    const place = selected.type === 'division' ? data.divisionById[selected.id] : data.districtById[selected.id];
-    chip = `${selected.type === 'division' ? t('division') : t('district')}: ${name(place)}`;
-  }
+  const place = data ? getPlace(data, extra, selected) : null;
+  if (place) chip = `${t(kindKey(selected.type, place))}: ${name(place)}`;
+  else if (selected) chip = t('loadingShort');
+  else if (layers.union && zoom < UNION_MIN_ZOOM) chip = t('zoomForUnions');
 
   return (
     <>
       <AppBar
         data={data}
+        extra={extra}
+        onNeedSearchData={() => {
+          needThanas().catch(console.error);
+          needUnions().catch(console.error);
+        }}
         onPick={(type, id) => select(type, id, true)}
         onHome={() => select(null, null, true)}
         onToggleDrawer={() => setDrawerOpen((o) => !o)}
@@ -84,6 +101,7 @@ export default function App() {
         <div className={`backdrop${drawerOpen ? ' show' : ''}`} onClick={() => setDrawerOpen(false)} />
         <LayerPanel
           data={data}
+          extra={extra}
           layers={layers}
           open={drawerOpen}
           onToggleLayer={toggleLayer}
@@ -96,12 +114,14 @@ export default function App() {
           {data && (
             <BangladeshMap
               data={data}
+              extra={extra}
               selected={selected}
               flyKey={flyKey}
               layers={layers}
               isMobile={isMobile}
               detailsRef={detailsRef}
               onSelect={select}
+              onZoom={setZoom}
             />
           )}
           {!data && <div className={`app-state${loadError ? ' error' : ''}`}>{loadError ? t('loadError') : t('loading')}</div>}
@@ -114,6 +134,7 @@ export default function App() {
         <DetailsPanel
           ref={detailsRef}
           data={data}
+          extra={extra}
           selected={selected}
           open={!!selected}
           onSelect={(type, id) => select(type, id, true)}

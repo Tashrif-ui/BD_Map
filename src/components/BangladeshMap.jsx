@@ -7,31 +7,44 @@ import L from 'leaflet';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { useTheme } from '../context/ThemeContext.jsx';
 import { DIVISION_COLORS } from '../lib/colors.js';
+import { loadThanas, loadUnions, loadUnionShapes, loadUpazilaShapes } from '../lib/data.js';
+import { UNION_MIN_ZOOM } from '../lib/layers.js';
 
 // Division labels whose bounding-box centre falls badly (coast, islands).
 const DIV_LABEL_POS = { chattogram: [22.75, 91.75], khulna: [22.85, 89.25], barishal: [22.45, 90.3] };
-const DISTRICT_LABEL_ZOOM = 8;
+// Which name labels show at which zoom (one level at a time keeps the map readable).
+const LABEL_ZOOM = { dist: 8, upz: 9.25, union: 10.5 };
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
 
 /* ---------- Styles (depend on theme, selection and visible layers) ---------- */
-function inFocus(ctx, divisionId, districtId) {
-  const { selected, data } = ctx;
-  if (!selected) return true;
-  if (selected.type === 'division') return selected.id === divisionId;
-  return districtId ? selected.id === districtId : data.districtById[selected.id].division_id === divisionId;
+// Division / district / upazila of the current selection.
+function focusOf(ctx) {
+  const { selected: sel, data, extra } = ctx;
+  if (!sel) return null;
+  if (sel.type === 'division') return { division: sel.id };
+  if (sel.type === 'district') return { division: data.districtById[sel.id]?.division_id, district: sel.id };
+  let upz = null;
+  if (sel.type === 'upazila') upz = data.upazilaById[sel.id];
+  else if (sel.type === 'thana') upz = data.upazilaById[extra.thanaById?.[sel.id]?.upazila_id];
+  else if (sel.type === 'union') upz = data.upazilaById[extra.unionById?.[sel.id]?.upazila_id];
+  return upz ? { division: upz.division_id, district: upz.district_id, upazila: upz.id } : null;
 }
+
+// level 0 = in focus, 1 = same division as the focus, 2 = elsewhere
+const fillOpacity = (dark, level) => [dark ? 0.9 : 0.85, 0.7, dark ? 0.42 : 0.3][level];
 
 function divisionStyle(ctx, f) {
   const dark = ctx.theme === 'dark';
-  const id = f.properties.id;
+  const focus = focusOf(ctx);
+  const level = !focus || focus.division === f.properties.id ? 0 : 2;
   return {
     stroke: false,
-    fillColor: DIVISION_COLORS[id],
+    fillColor: DIVISION_COLORS[f.properties.id],
     // With districts on, the district shades carry the colour; divisions only draw outlines.
-    fillOpacity: ctx.layers.dist ? 0 : inFocus(ctx, id) ? (dark ? 0.9 : 0.85) : dark ? 0.42 : 0.3,
+    fillOpacity: ctx.layers.dist ? 0 : fillOpacity(dark, level),
   };
 }
 
@@ -42,37 +55,68 @@ function divisionLineStyle(ctx) {
 function districtStyle(ctx, f) {
   const dark = ctx.theme === 'dark';
   const p = f.properties;
-  const { selected, data } = ctx;
-  const isSel = selected?.type === 'district' && selected.id === p.id;
-  const focus = inFocus(ctx, p.division_id, selected?.type === 'district' ? p.id : null);
-  const sameDivision = selected?.type === 'district' && data.districtById[selected.id].division_id === p.division_id;
+  const focus = focusOf(ctx);
+  const isSel = ctx.selected?.type === 'district' && ctx.selected.id === p.id;
+  let level = 0;
+  if (focus && !isSel) {
+    if (focus.district) level = focus.district === p.id ? 0 : focus.division === p.division_id ? 1 : 2;
+    else level = focus.division === p.division_id ? 0 : 2;
+  }
   return {
     color: isSel ? (dark ? '#ffffff' : '#111111') : dark ? 'rgba(12,17,15,.55)' : 'rgba(255,255,255,.85)',
     weight: isSel ? 3.5 : 1,
     opacity: 1,
     fillColor: p.fill,
-    fillOpacity: isSel ? 1 : focus ? (dark ? 0.9 : 0.85) : sameDivision ? 0.7 : dark ? 0.42 : 0.3,
+    fillOpacity: isSel ? 1 : fillOpacity(dark, level),
+  };
+}
+
+// Upazila, thana and union outlines sit on top of the district colours.
+const OVERLAY_LINE = {
+  upazila: { light: 'rgba(23,32,28,.6)', dark: 'rgba(230,240,235,.55)', weight: 0.9 },
+  thana: { light: '#5b3fb3', dark: '#c9b8ff', weight: 1, dashArray: '4 3' },
+  union: { light: 'rgba(23,32,28,.45)', dark: 'rgba(230,240,235,.4)', weight: 0.6 },
+};
+
+function overlayStyle(kind, ctx, f) {
+  const dark = ctx.theme === 'dark';
+  const s = OVERLAY_LINE[kind];
+  const isSel = ctx.selected?.type === kind && ctx.selected.id === f.properties.id;
+  if (isSel)
+    return { color: dark ? '#ffffff' : '#111111', weight: 3.5, opacity: 1, fillColor: '#ffffff', fillOpacity: dark ? 0.22 : 0.4, dashArray: null };
+  // Without the district colours underneath, upazilas take their district's shade.
+  const ownFill = kind === 'upazila' && !ctx.layers.dist;
+  return {
+    color: dark ? s.dark : s.light,
+    weight: s.weight,
+    opacity: 1,
+    dashArray: s.dashArray ?? null,
+    fillColor: ownFill ? ctx.districtFill[f.properties.district_id] : '#000',
+    fillOpacity: ownFill ? fillOpacity(dark, 0) : 0, // transparent but still clickable
   };
 }
 
 /* ---------- Component ---------- */
-export default function BangladeshMap({ data, selected, flyKey, layers, isMobile, detailsRef, onSelect }) {
+export default function BangladeshMap({ data, extra, selected, flyKey, layers, isMobile, detailsRef, onSelect, onZoom }) {
   const { theme } = useTheme();
   const { lang, name } = useLanguage();
   const elRef = useRef(null);
-  const mapRef = useRef(null);
   const partsRef = useRef(null);
+
+  const districtFill = useRef(null);
+  if (!districtFill.current)
+    districtFill.current = Object.fromEntries(data.districtShapes.features.map((f) => [f.properties.id, f.properties.fill]));
 
   // Leaflet event handlers read the latest props through this ref.
   const ctxRef = useRef(null);
-  ctxRef.current = { data, selected, layers, theme, name, onSelect };
+  ctxRef.current = { data, extra, selected, layers, theme, name, onSelect, onZoom, districtFill: districtFill.current };
 
   /* Create the map once. */
   useEffect(() => {
     const ctx = () => ctxRef.current;
     const map = L.map(elRef.current, {
       minZoom: 6,
-      maxZoom: 12,
+      maxZoom: 13,
       zoomSnap: 0.25,
       maxBounds: [
         [19.5, 86.0],
@@ -82,21 +126,28 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
     });
     map.attributionControl.setPrefix('<b>BD-Map by Tashrif Alam</b>');
     map.attributionControl.addAttribution(
-      'Boundaries: <a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoBoundaries</a> · BBS / OCHA HDX',
+      'Boundaries: <a href="https://data.humdata.org/dataset/cod-ab-bgd" target="_blank" rel="noopener">OCHA COD-AB</a> (BBS) · ' +
+        '<a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoBoundaries</a>',
     );
-    map.createPane('divFill').style.zIndex = 400;
-    map.createPane('distFill').style.zIndex = 410;
-    const linePane = map.createPane('divLine');
-    linePane.style.zIndex = 420;
-    linePane.style.pointerEvents = 'none';
-    const labelPane = map.createPane('labels');
-    labelPane.style.zIndex = 450;
-    labelPane.style.pointerEvents = 'none';
+    const pane = (paneName, z, interactive = true) => {
+      const el = map.createPane(paneName);
+      el.style.zIndex = z;
+      if (!interactive) el.style.pointerEvents = 'none';
+    };
+    pane('divFill', 400);
+    pane('distFill', 405);
+    pane('upzFill', 410);
+    pane('thanaFill', 412);
+    pane('unionFill', 414);
+    pane('divLine', 420, false);
+    pane('labels', 450, false);
 
     const bounds = L.geoJSON(data.divisionShapes).getBounds();
     map.fitBounds(bounds, { padding: [20, 20] });
 
     const hoverTip = L.tooltip({ className: 'hover-tip', direction: 'top', offset: [0, -8] });
+    const showTip = (e, html) => hoverTip.setLatLng(e.latlng).setContent(html).openOn(map);
+    const subtitle = (text) => ` · <span style="color:var(--muted)">${escapeHtml(text)}</span>`;
 
     const divFill = L.geoJSON(data.divisionShapes, {
       pane: 'divFill',
@@ -109,11 +160,7 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
         });
       },
     });
-    const divLines = L.geoJSON(data.divisionShapes, {
-      pane: 'divLine',
-      interactive: false,
-      style: () => divisionLineStyle(ctx()),
-    });
+    const divLines = L.geoJSON(data.divisionShapes, { pane: 'divLine', interactive: false, style: () => divisionLineStyle(ctx()) });
     const distFill = L.geoJSON(data.districtShapes, {
       pane: 'distFill',
       style: (f) => districtStyle(ctx(), f),
@@ -126,13 +173,7 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
               layer.setStyle({ fillOpacity: 1, weight: 2.5, color: c.theme === 'dark' ? '#ffffff' : '#111111' });
               layer.bringToFront();
             }
-            const division = c.data.divisionById[f.properties.division_id];
-            hoverTip
-              .setLatLng(e.latlng)
-              .setContent(
-                `${escapeHtml(c.name(f.properties))} · <span style="color:var(--muted)">${escapeHtml(c.name(division))}</span>`,
-              )
-              .openOn(map);
+            showTip(e, escapeHtml(c.name(f.properties)) + subtitle(c.name(c.data.divisionById[f.properties.division_id])));
           },
           mousemove: (e) => hoverTip.setLatLng(e.latlng),
           mouseout: () => {
@@ -143,24 +184,154 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
         });
       },
     });
-    const divLabels = L.layerGroup();
-    const distLabels = L.layerGroup();
+
+    // Upazila / thana / union layers start empty and are filled when first needed.
+    function makeOverlay(kind, paneName) {
+      const group = L.geoJSON(null, {
+        pane: paneName,
+        style: (f) => overlayStyle(kind, ctx(), f),
+        onEachFeature: (f, layer) => {
+          layer.on({
+            click: () => ctx().onSelect(kind, f.properties.id, false),
+            mouseover: (e) => {
+              const c = ctx();
+              if (!(c.selected?.type === kind && c.selected.id === f.properties.id)) {
+                const ink = c.theme === 'dark' ? '#ffffff' : '#111111';
+                layer.setStyle({ weight: 2.5, color: ink, fillColor: ink, fillOpacity: 0.12 });
+                layer.bringToFront();
+              }
+              const parentUpz = kind === 'thana' ? c.extra.thanaById?.[f.properties.id]?.upazila_id : f.properties.upazila_id;
+              const parent = kind === 'upazila' ? c.data.districtById[f.properties.district_id] : c.data.upazilaById[parentUpz];
+              showTip(e, escapeHtml(c.name(f.properties)) + (parent ? subtitle(c.name(parent)) : ''));
+            },
+            mousemove: (e) => hoverTip.setLatLng(e.latlng),
+            mouseout: () => {
+              group.resetStyle(layer);
+              map.closeTooltip(hoverTip);
+              bringSelectedToFront();
+            },
+          });
+        },
+      });
+      return group;
+    }
+    const overlays = {
+      upazila: makeOverlay('upazila', 'upzFill'),
+      thana: makeOverlay('thana', 'thanaFill'),
+      union: makeOverlay('union', 'unionFill'),
+    };
+
+    const labels = { div: L.layerGroup(), dist: L.layerGroup(), upz: L.layerGroup(), union: L.layerGroup() };
 
     function bringSelectedToFront() {
       const sel = ctx().selected;
-      if (sel?.type !== 'district') return;
-      distFill.eachLayer((l) => l.feature.properties.id === sel.id && l.bringToFront());
+      if (!sel) return;
+      const group = { district: distFill, ...overlays }[sel.type];
+      group?.eachLayer((l) => l.feature.properties.id === sel.id && l.bringToFront());
     }
 
-    function updateZoomClass() {
+    // Show only one level of name labels for the current zoom.
+    function updateLabels() {
       const z = map.getZoom();
-      elRef.current.classList.toggle('z-low', z < DISTRICT_LABEL_ZOOM);
-      elRef.current.classList.toggle('z-high', z >= DISTRICT_LABEL_ZOOM && map.hasLayer(distFill));
+      const on = ctx().layers;
+      let mode = 'none';
+      if (on.union && z >= LABEL_ZOOM.union) mode = 'union';
+      else if (on.upz && z >= LABEL_ZOOM.upz) mode = 'upz';
+      else if (on.dist && (z >= LABEL_ZOOM.dist || !on.div)) mode = 'dist';
+      else if (on.div) mode = 'div';
+      for (const [k, g] of Object.entries(labels)) {
+        if (k === mode) g.addTo(map);
+        else map.removeLayer(g);
+      }
     }
-    map.on('zoomend', updateZoomClass);
 
-    partsRef.current = { map, bounds, divFill, divLines, distFill, divLabels, distLabels, bringSelectedToFront, updateZoomClass };
-    mapRef.current = map;
+    function labelFor(kind, props, pos) {
+      return L.tooltip({ permanent: true, direction: 'center', className: `lbl lbl-${kind}`, pane: 'labels' })
+        .setLatLng(pos)
+        .setContent(escapeHtml(ctx().name(props)));
+    }
+    function addLabels(kind, group, ids) {
+      group.eachLayer((l) => {
+        // City wards are too small and too many to label; their name shows on hover.
+        if (kind === 'union' && l.feature.properties.type === 'ward') return;
+        if (!ids || ids.has(l.feature.properties.id))
+          labelFor(kind, l.feature.properties, l.getBounds().getCenter()).addTo(labels[kind]);
+      });
+    }
+    function rebuildLabels() {
+      for (const g of Object.values(labels)) g.clearLayers();
+      divFill.eachLayer((l) => {
+        const p = l.feature.properties;
+        labelFor('div', p, DIV_LABEL_POS[p.id] || l.getBounds().getCenter()).addTo(labels.div);
+      });
+      addLabels('dist', distFill);
+      addLabels('upz', overlays.upazila);
+      addLabels('union', overlays.union);
+    }
+
+    let upazilasLoaded = null;
+    const ensureUpazilas = () =>
+      (upazilasLoaded ||= loadUpazilaShapes().then((fc) => {
+        if (!partsRef.current) return;
+        overlays.upazila.addData(fc);
+        addLabels('upz', overlays.upazila);
+      }));
+    let thanasLoaded = null;
+    const ensureThanas = () =>
+      (thanasLoaded ||= loadThanas().then(({ thanaShapes }) => {
+        if (partsRef.current) overlays.thana.addData(thanaShapes);
+      }));
+
+    // Union shapes are split per district; the districts in view are loaded once zoomed in.
+    const unionDistricts = new Map();
+    const districtBounds = {};
+    distFill.eachLayer((l) => (districtBounds[l.feature.properties.id] = l.getBounds()));
+    function ensureUnionDistrict(id) {
+      if (!unionDistricts.has(id)) {
+        const p = loadUnionShapes(id).then(
+          (fc) => {
+            if (!partsRef.current) return;
+            overlays.union.addData(fc);
+            addLabels('union', overlays.union, new Set(fc.features.map((f) => f.properties.id)));
+            bringSelectedToFront();
+          },
+          (err) => {
+            unionDistricts.delete(id);
+            console.error(err);
+          },
+        );
+        unionDistricts.set(id, p);
+      }
+      return unionDistricts.get(id);
+    }
+    function refreshUnions() {
+      if (!ctx().layers.union || map.getZoom() < UNION_MIN_ZOOM) return;
+      const view = map.getBounds();
+      for (const [id, b] of Object.entries(districtBounds)) if (view.intersects(b)) ensureUnionDistrict(id);
+    }
+
+    map.on('zoomend', () => {
+      updateLabels();
+      ctx().onZoom?.(map.getZoom());
+    });
+    map.on('moveend', refreshUnions);
+    ctx().onZoom?.(map.getZoom());
+
+    partsRef.current = {
+      map,
+      bounds,
+      divFill,
+      divLines,
+      distFill,
+      overlays,
+      bringSelectedToFront,
+      updateLabels,
+      rebuildLabels,
+      refreshUnions,
+      ensureUpazilas,
+      ensureThanas,
+      ensureUnionDistrict,
+    };
 
     // Keep the map sized to its box (panels opening, rotation, window resize).
     let timer;
@@ -177,7 +348,6 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
       ro.disconnect();
       clearTimeout(timer);
       map.remove();
-      mapRef.current = null;
       partsRef.current = null;
     };
   }, [data]);
@@ -185,72 +355,87 @@ export default function BangladeshMap({ data, selected, flyKey, layers, isMobile
   /* Labels follow the language. */
   useEffect(() => {
     const p = partsRef.current;
-    p.divLabels.clearLayers();
-    p.distLabels.clearLayers();
-    p.divFill.eachLayer((l) => {
-      const props = l.feature.properties;
-      L.tooltip({ permanent: true, direction: 'center', className: 'lbl lbl-div', pane: 'labels' })
-        .setLatLng(DIV_LABEL_POS[props.id] || l.getBounds().getCenter())
-        .setContent(escapeHtml(name(props)))
-        .addTo(p.divLabels);
-    });
-    p.distFill.eachLayer((l) => {
-      L.tooltip({ permanent: true, direction: 'center', className: 'lbl lbl-dist', pane: 'labels' })
-        .setLatLng(l.getBounds().getCenter())
-        .setContent(escapeHtml(name(l.feature.properties)))
-        .addTo(p.distLabels);
-    });
+    p.rebuildLabels();
+    p.updateLabels();
   }, [data, lang, name]);
 
-  /* Show / hide layers. */
+  /* Show / hide layers (loading upazilas, thanas and unions the first time). */
   useEffect(() => {
     const p = partsRef.current;
     const show = (layer, on) => (on ? layer.addTo(p.map) : p.map.removeLayer(layer));
-    [p.divFill, p.divLines, p.divLabels].forEach((l) => show(l, layers.div));
-    [p.distFill, p.distLabels].forEach((l) => show(l, layers.dist));
-    p.updateZoomClass();
-  }, [data, layers.div, layers.dist]);
+    [p.divFill, p.divLines].forEach((l) => show(l, layers.div));
+    show(p.distFill, layers.dist);
+    show(p.overlays.upazila, layers.upz);
+    show(p.overlays.thana, layers.thana);
+    show(p.overlays.union, layers.union);
+    if (layers.upz) p.ensureUpazilas().then(() => partsRef.current?.updateLabels());
+    if (layers.thana) p.ensureThanas();
+    if (layers.union) p.refreshUnions();
+    p.updateLabels();
+  }, [data, layers.div, layers.dist, layers.upz, layers.thana, layers.union]);
 
   /* Restyle on theme / selection / layer changes. */
   useEffect(() => {
     const p = partsRef.current;
-    p.divFill.setStyle((f) => divisionStyle(ctxRef.current, f));
-    p.divLines.setStyle(() => divisionLineStyle(ctxRef.current));
-    p.distFill.setStyle((f) => districtStyle(ctxRef.current, f));
+    const c = () => ctxRef.current;
+    p.divFill.setStyle((f) => divisionStyle(c(), f));
+    p.divLines.setStyle(() => divisionLineStyle(c()));
+    p.distFill.setStyle((f) => districtStyle(c(), f));
+    for (const [kind, group] of Object.entries(p.overlays)) group.setStyle((f) => overlayStyle(kind, c(), f));
     p.bringSelectedToFront();
-  }, [data, theme, selected?.type, selected?.id, layers.div, layers.dist]);
+  }, [data, extra, theme, selected?.type, selected?.id, layers.div, layers.dist, layers.upz, layers.thana, layers.union]);
 
   /* Move the view when asked (search, list click) and, on mobile, so the area is not under the sheet. */
   useEffect(() => {
     if (!flyKey) return;
     const p = partsRef.current;
-    if (!selected) {
-      if (flyKey.fly) p.map.flyToBounds(p.bounds, { padding: [20, 20], duration: 0.6 });
-      return;
-    }
-    if (!flyKey.fly && !isMobile) return;
-    const group = selected.type === 'division' ? p.divFill : p.distFill;
-    let target = null;
-    group.eachLayer((l) => {
-      if (l.feature.properties.id === selected.id) target = l;
-    });
-    if (!target) return;
+    let cancelled = false;
 
-    const opts = { paddingTopLeft: [30, 30], paddingBottomRight: [30, 30], duration: 0.6 };
-    if (isMobile && detailsRef.current) {
-      const sheet = detailsRef.current.getBoundingClientRect();
-      const box = elRef.current.getBoundingClientRect();
-      opts.paddingTopLeft = [20, 56];
-      opts.paddingBottomRight =
-        sheet.width >= box.width - 1
-          ? [20, Math.min(sheet.height, box.height * 0.6) + 16] // bottom sheet
-          : [sheet.width + 16, 20]; // landscape side sheet
+    async function run() {
+      if (!selected) {
+        if (flyKey.fly) p.map.flyToBounds(p.bounds, { padding: [20, 20], duration: 0.6 });
+        return;
+      }
+      // Make sure the selected shape is on the map before looking for it.
+      if (selected.type === 'upazila') await p.ensureUpazilas();
+      if (selected.type === 'thana') await p.ensureThanas();
+      if (selected.type === 'union') {
+        const { unionById } = await loadUnions();
+        const upz = data.upazilaById[unionById[selected.id]?.upazila_id];
+        if (upz) await p.ensureUnionDistrict(upz.district_id);
+      }
+      if (cancelled || !partsRef.current) return;
+      p.bringSelectedToFront();
+      if (!flyKey.fly && !isMobile) return;
+
+      const group = { division: p.divFill, district: p.distFill, ...p.overlays }[selected.type];
+      let target = null;
+      group?.eachLayer((l) => {
+        if (l.feature.properties.id === selected.id) target = l;
+      });
+      if (!target) return;
+
+      const opts = { paddingTopLeft: [30, 30], paddingBottomRight: [30, 30], duration: 0.6 };
+      if (isMobile && detailsRef.current) {
+        const sheet = detailsRef.current.getBoundingClientRect();
+        const box = elRef.current.getBoundingClientRect();
+        opts.paddingTopLeft = [20, 56];
+        opts.paddingBottomRight =
+          sheet.width >= box.width - 1
+            ? [20, Math.min(sheet.height, box.height * 0.6) + 16] // bottom sheet
+            : [sheet.width + 16, 20]; // landscape side sheet
+      }
+      const maxZoom = { division: 8, district: 8.5, upazila: 10, thana: 10, union: 11.5 }[selected.type];
+      opts.maxZoom = isMobile ? maxZoom - 0.25 : maxZoom;
+      p.map.flyToBounds(target.getBounds(), opts);
     }
-    opts.maxZoom = selected.type === 'district' ? (isMobile ? 8.25 : 8.5) : isMobile ? 7.5 : 8;
-    p.map.flyToBounds(target.getBounds(), opts);
+    run();
+    return () => {
+      cancelled = true;
+    };
     // flyKey changes on every selection; the other values are read at that moment.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flyKey]);
 
-  return <div id="map" ref={elRef} className="z-low" aria-label="Map of Bangladesh" />;
+  return <div id="map" ref={elRef} aria-label="Map of Bangladesh" />;
 }

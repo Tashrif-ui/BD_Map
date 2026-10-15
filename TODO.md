@@ -35,11 +35,14 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress / partial
 - [ ] Push to GitHub + first deploy to Cloudflare Pages — needs the owner's GitHub and Cloudflare accounts
 
 ## Phase 4 — Upazilas, thanas, unions
-- [ ] Find and verify upazila boundary source + license
-- [ ] Upazila list per district (Bangla + English), split GeoJSON per district
-- [ ] Thana / police station data (separate dataset from upazilas)
-- [ ] Union data (split per district, lazy-loaded)
-- [ ] Enable layers + details
+- [x] Upazila boundaries: OCHA COD-AB v03 (BBS 2023) — 495 upazilas + 12 city corporations; divisions/districts now dissolved from them so all levels line up
+- [x] Bangla upazila names for all 507 (nuhil/bangladesh-geocode MIT + `data/names/upazila-overrides.json`)
+- [x] Thanas: BBS 2015 upazila/thana units (544) as a separate dataset/layer
+- [x] Unions, paurashavas, wards: BBS 2015 (5,160), split per district, loaded only when zoomed in; ~3,800 with verified Bangla names
+- [x] Layers, details panels, breadcrumbs and search for upazilas, thanas and unions
+- [x] `validate-data.js` extended (counts, parent links, per-district union files)
+- [ ] Bangla names for the remaining unions, paurashavas, wards and city thanas (needs a verified source)
+- [ ] Newer thanas/unions created after 2015 (needs newer boundary data)
 
 ## Phase 5 — Parliamentary constituencies
 - [ ] Latest Election Commission gazette for the 300 seats

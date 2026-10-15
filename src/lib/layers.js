@@ -6,10 +6,16 @@
 export const LAYERS = [
   { id: 'div', labelKey: 'l_div' },
   { id: 'dist', labelKey: 'l_dist' },
-  { id: 'upz', labelKey: 'l_upz', phase: 4 },
-  { id: 'thana', labelKey: 'l_thana', phase: 4 },
-  { id: 'union', labelKey: 'l_union', phase: 4 },
+  { id: 'upz', labelKey: 'l_upz' },
+  { id: 'thana', labelKey: 'l_thana' },
+  { id: 'union', labelKey: 'l_union' },
   { id: 'seat', labelKey: 'l_seat', phase: 5 },
 ];
 
-export const DEFAULT_LAYERS = { div: true, dist: true };
+export const DEFAULT_LAYERS = { div: true, dist: true, upz: false, thana: false, union: false };
+
+// Which layer shows each kind of selectable place.
+export const LAYER_FOR_TYPE = { division: 'div', district: 'dist', upazila: 'upz', thana: 'thana', union: 'union' };
+
+// Unions are drawn only from this zoom level (they are loaded per district).
+export const UNION_MIN_ZOOM = 9;

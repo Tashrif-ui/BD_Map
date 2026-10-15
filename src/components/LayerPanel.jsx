@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext.jsx';
 import { DIVISION_COLORS, DIVISION_ORDER } from '../lib/colors.js';
 import { LAYERS } from '../lib/layers.js';
 
-export default function LayerPanel({ data, layers, open, onToggleLayer, onComingSoon, onSelectDivision, onClose }) {
+export default function LayerPanel({ data, extra, layers, open, onToggleLayer, onComingSoon, onSelectDivision, onClose }) {
   const { t, num, name } = useLanguage();
 
   return (
@@ -39,24 +39,19 @@ export default function LayerPanel({ data, layers, open, onToggleLayer, onComing
       <section>
         <h3>{t('atAGlance')}</h3>
         <div className="stats">
-          <div className="stat">
-            <b>{num(data ? data.divisions.length : 8)}</b>
-            <span>{t('s_div')}</span>
-          </div>
-          <div className="stat">
-            <b>{num(data ? data.districts.length : 64)}</b>
-            <span>{t('s_dist')}</span>
-          </div>
-          <div className="stat">
-            <b>{num(300)}</b>
-            <span>{t('s_seat')}</span>
-          </div>
-          <div className="stat dim">
-            <b>—</b>
-            <span>
-              {t('s_upz')} · {t('phase')} {num(4)}
-            </span>
-          </div>
+          {[
+            [data?.divisions.length, 's_div'],
+            [data?.districts.length, 's_dist'],
+            [data?.upazilas.filter((u) => u.type === 'upazila').length, 's_upz2'],
+            [data?.upazilas.filter((u) => u.type === 'city_corporation').length, 's_city'],
+            [extra.unions?.filter((u) => u.type === 'union').length, 's_union'],
+            [300, 's_seat'],
+          ].map(([n, key]) => (
+            <div key={key} className="stat">
+              <b>{n == null ? '—' : num(n)}</b>
+              <span>{t(key)}</span>
+            </div>
+          ))}
         </div>
       </section>
 

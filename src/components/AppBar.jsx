@@ -7,7 +7,7 @@ import LanguageSwitcher from './LanguageSwitcher.jsx';
 import SearchBar from './SearchBar.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 
-export default function AppBar({ data, onPick, onHome, onToggleDrawer }) {
+export default function AppBar({ data, extra, onPick, onNeedSearchData, onHome, onToggleDrawer }) {
   const { t } = useLanguage();
   return (
     <header className="appbar">
@@ -30,7 +30,11 @@ export default function AppBar({ data, onPick, onHome, onToggleDrawer }) {
       </a>
       <span className="badge-preview">{t('beta')}</span>
 
-      {data ? <SearchBar data={data} onPick={onPick} /> : <div className="search" />}
+      {data ? (
+        <SearchBar data={data} extra={extra} onPick={onPick} onNeedData={onNeedSearchData} />
+      ) : (
+        <div className="search" />
+      )}
 
       <div className="controls">
         <button className="icon-btn only-mobile" type="button" aria-label={t('openLayers')} onClick={onToggleDrawer}>

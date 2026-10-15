@@ -5,33 +5,53 @@
 import { useMemo, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { DIVISION_ORDER } from '../lib/colors.js';
+import { kindKey } from '../lib/places.js';
 
-const MAX_RESULTS = 8;
+const MAX_RESULTS = 10;
+const TYPE_RANK = { division: 0, district: 1, upazila: 2, thana: 3, union: 4 };
 
 // Searches Bangla and English names at the same time, whatever the active language.
-export default function SearchBar({ data, onPick }) {
-  const { t, name, altName } = useLanguage();
+// Thanas and unions join the index once their records are loaded (on first focus).
+export default function SearchBar({ data, extra, onPick, onNeedData }) {
+  const { t, name } = useLanguage();
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
 
-  const index = useMemo(
-    () => [
+  const index = useMemo(() => {
+    const list = [
       ...DIVISION_ORDER.map((id) => ({ type: 'division', item: data.divisionById[id] })),
       ...data.districts.map((d) => ({ type: 'district', item: d })),
-    ],
-    [data],
-  );
+      ...data.upazilas.map((u) => ({ type: 'upazila', item: u })),
+      ...(extra.thanas ?? []).map((x) => ({ type: 'thana', item: x })),
+      ...(extra.unions ?? []).map((x) => ({ type: 'union', item: x })),
+    ];
+    for (const it of list) {
+      it.en = it.item.name_en.toLowerCase();
+      it.bn = it.item.name_bn ?? '';
+    }
+    return list;
+  }, [data, extra.thanas, extra.unions]);
 
   const hits = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return [];
-    const startsWith = (it) => it.item.name_en.toLowerCase().startsWith(q) || it.item.name_bn.startsWith(q);
+    const starts = (it) => (it.en.startsWith(q) || it.bn.startsWith(q) ? 0 : 1);
     return index
-      .filter((it) => it.item.name_en.toLowerCase().includes(q) || it.item.name_bn.includes(q))
-      .sort((a, b) => startsWith(b) - startsWith(a) || (a.type === 'division' ? -1 : 1))
+      .filter((it) => it.en.includes(q) || it.bn.includes(q))
+      .sort((a, b) => starts(a) - starts(b) || TYPE_RANK[a.type] - TYPE_RANK[b.type] || a.en.localeCompare(b.en))
       .slice(0, MAX_RESULTS);
   }, [index, query]);
+
+  // Parent shown on the right of each result.
+  const parentOf = (hit) => {
+    const it = hit.item;
+    if (hit.type === 'division') return '';
+    if (hit.type === 'district') return name(data.divisionById[it.division_id]);
+    if (hit.type === 'upazila') return name(data.districtById[it.district_id]);
+    const upz = data.upazilaById[it.upazila_id];
+    return upz ? `${name(upz)}, ${name(data.districtById[upz.district_id])}` : '';
+  };
 
   const pick = (hit) => {
     if (!hit) return;
@@ -69,7 +89,10 @@ export default function SearchBar({ data, onPick }) {
           setActive(0);
           setOpen(true);
         }}
-        onFocus={() => setOpen(true)}
+        onFocus={() => {
+          setOpen(true);
+          onNeedData();
+        }}
         onBlur={() => setOpen(false)}
         onKeyDown={onKeyDown}
       />
@@ -88,11 +111,9 @@ export default function SearchBar({ data, onPick }) {
                 pick(hit);
               }}
             >
-              <span className="type">{hit.type === 'division' ? t('division') : t('district')}</span>
-              <span>{name(hit.item)}</span>
-              <span className="sub">
-                {hit.type === 'district' ? name(data.divisionById[hit.item.division_id]) : altName(hit.item)}
-              </span>
+              <span className="type">{t(kindKey(hit.type, hit.item))}</span>
+              <span className="rname">{name(hit.item)}</span>
+              <span className="sub">{parentOf(hit)}</span>
             </button>
           ))
         ) : (

@@ -4,17 +4,57 @@
     "author": "Tashrif Alam",
     "copyright": "© 2026 Tashrif Alam",
     "license": "CC BY-NC-SA 4.0",
-    "description": "Official English and Bangla names of the 8 divisions, mapped from geoBoundaries shapeName.",
+    "description": "Official English and Bangla names of the 8 divisions, keyed by OCHA COD-AB name (cod_name).",
     "last_verified": "2026-10-15"
   },
   "data": [
-    { "source_name": "Barisal", "id": "barishal", "name_en": "Barishal", "name_bn": "বরিশাল" },
-    { "source_name": "Chittagong", "id": "chattogram", "name_en": "Chattogram", "name_bn": "চট্টগ্রাম" },
-    { "source_name": "Dhaka", "id": "dhaka", "name_en": "Dhaka", "name_bn": "ঢাকা" },
-    { "source_name": "Khulna", "id": "khulna", "name_en": "Khulna", "name_bn": "খুলনা" },
-    { "source_name": "Mymensingh", "id": "mymensingh", "name_en": "Mymensingh", "name_bn": "ময়মনসিংহ" },
-    { "source_name": "Rajshani", "id": "rajshahi", "name_en": "Rajshahi", "name_bn": "রাজশাহী" },
-    { "source_name": "Rangpur", "id": "rangpur", "name_en": "Rangpur", "name_bn": "রংপুর" },
-    { "source_name": "Sylhet", "id": "sylhet", "name_en": "Sylhet", "name_bn": "সিলেট" }
+    {
+      "cod_name": "Barishal",
+      "id": "barishal",
+      "name_en": "Barishal",
+      "name_bn": "বরিশাল"
+    },
+    {
+      "cod_name": "Chattogram",
+      "id": "chattogram",
+      "name_en": "Chattogram",
+      "name_bn": "চট্টগ্রাম"
+    },
+    {
+      "cod_name": "Dhaka",
+      "id": "dhaka",
+      "name_en": "Dhaka",
+      "name_bn": "ঢাকা"
+    },
+    {
+      "cod_name": "Khulna",
+      "id": "khulna",
+      "name_en": "Khulna",
+      "name_bn": "খুলনা"
+    },
+    {
+      "cod_name": "Mymensingh",
+      "id": "mymensingh",
+      "name_en": "Mymensingh",
+      "name_bn": "ময়মনসিংহ"
+    },
+    {
+      "cod_name": "Rajshahi",
+      "id": "rajshahi",
+      "name_en": "Rajshahi",
+      "name_bn": "রাজশাহী"
+    },
+    {
+      "cod_name": "Rangpur",
+      "id": "rangpur",
+      "name_en": "Rangpur",
+      "name_bn": "রংপুর"
+    },
+    {
+      "cod_name": "Sylhet",
+      "id": "sylhet",
+      "name_en": "Sylhet",
+      "name_bn": "সিলেট"
+    }
   ]
 }
